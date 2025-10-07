@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ThemeToggle } from '@/components/theme-toggle';
 import { Mic, MessageSquare } from 'lucide-react';
 
 export default function HomePage() {
@@ -23,10 +22,6 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center p-4">
-      <div className="absolute top-4 right-4">
-        <ThemeToggle />
-      </div>
-
       <Card className="max-w-2xl w-full">
         <CardContent className="p-8">
           <div className="text-center mb-8">

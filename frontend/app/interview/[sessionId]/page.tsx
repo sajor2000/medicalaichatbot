@@ -7,7 +7,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card } from '@/components/ui/card';
 import { VoiceClient } from '@/components/VoiceClient';
-import { ThemeToggle } from '@/components/theme-toggle';
 
 type Message = {
   role: 'system' | 'user' | 'assistant';
@@ -187,9 +186,6 @@ export default function InterviewPage() {
             </div>
 
             <div className="flex items-center gap-3">
-              {/* THEME TOGGLE */}
-              <ThemeToggle />
-
               {/* MODE SWITCHER */}
               <div className="flex items-center gap-2 bg-gray-100 dark:bg-gray-700 rounded-lg p-1.5">
                 <Button

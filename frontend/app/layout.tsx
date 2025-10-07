@@ -30,15 +30,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               try {
-                const theme = localStorage.getItem('ai-med-theme') || 'dark';
-                const root = document.documentElement;
-
-                if (theme === 'system') {
-                  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-                  root.classList.add(systemTheme);
-                } else {
-                  root.classList.add(theme);
-                }
+                document.documentElement.classList.add('dark');
               } catch (e) {}
             `,
           }}
@@ -47,7 +39,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider defaultTheme="dark" storageKey="ai-med-theme">
+        <ThemeProvider>
           {children}
         </ThemeProvider>
       </body>
