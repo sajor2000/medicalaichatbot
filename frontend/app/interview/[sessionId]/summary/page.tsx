@@ -147,6 +147,43 @@ export default function InterviewSummaryPage() {
           </Card>
         </div>
 
+        {/* Grading Rubric */}
+        <Card className="p-6 mb-8 bg-blue-50 dark:bg-blue-900/30 border-blue-200 dark:border-blue-800">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">📊 Grading Rubric</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Completeness Score (1-5)</h3>
+              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                Based on percentage of key facts elicited from the patient:
+              </p>
+              <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1 ml-4">
+                <li>• <strong>5/5:</strong> 90%+ of facts elicited (Excellent)</li>
+                <li>• <strong>4/5:</strong> 75-89% of facts elicited (Very Good)</li>
+                <li>• <strong>3/5:</strong> 60-74% of facts elicited (Good)</li>
+                <li>• <strong>2/5:</strong> 40-59% of facts elicited (Needs Improvement)</li>
+                <li>• <strong>1/5:</strong> Below 40% of facts elicited (Poor)</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Empathy Score (1-5)</h3>
+              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                Based on ratio of open-ended questions to total questions:
+              </p>
+              <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1 ml-4">
+                <li>• <strong>5/5:</strong> 40%+ open-ended questions (Excellent rapport building)</li>
+                <li>• <strong>4/5:</strong> 30-39% open-ended questions (Very Good)</li>
+                <li>• <strong>3/5:</strong> 20-29% open-ended questions (Good)</li>
+                <li>• <strong>2/5:</strong> 10-19% open-ended questions (Needs Improvement)</li>
+                <li>• <strong>1/5:</strong> Below 10% open-ended questions (Poor)</li>
+              </ul>
+              <p className="text-xs text-gray-600 dark:text-gray-400 mt-3 italic">
+                Open-ended questions start with &quot;What brings you...&quot;, &quot;Tell me about...&quot;, &quot;How are you...&quot;, &quot;Describe...&quot;, etc.
+              </p>
+            </div>
+          </div>
+        </Card>
+
         {/* Facts Elicited */}
         <Card className="p-6 mb-8">
           <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">
