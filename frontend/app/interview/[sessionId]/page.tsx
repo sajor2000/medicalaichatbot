@@ -1,14 +1,12 @@
 'use client';
 
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import { useState, useRef, useEffect } from 'react';
-import { MessageSquare, Mic, Send, Loader2, AlertCircle } from 'lucide-react';
+import { MessageSquare, Mic, Send, Loader2, AlertCircle, LogOut } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { VoiceClient } from '@/components/VoiceClient';
-import { gradeConversation } from '@/lib/grading';
 
 type Message = {
   role: 'system' | 'user' | 'assistant';
@@ -24,6 +22,7 @@ type ErrorState = {
 
 export default function InterviewPage() {
   const params = useParams();
+  const router = useRouter();
   const sessionId = params.sessionId as string;
 
   const [mode, setMode] = useState<Mode>('text');
@@ -31,9 +30,7 @@ export default function InterviewPage() {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<ErrorState>(null);
-  const [completeness, setCompleteness] = useState(0);
-  const [empathy, setEmpathy] = useState(0);
-  const [elicitedFactIds, setElicitedFactIds] = useState<string[]>([]);
+  const [showEndDialog, setShowEndDialog] = useState(false);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -48,14 +45,6 @@ export default function InterviewPage() {
       inputRef.current?.focus();
     }
   }, [mode]);
-
-  // Update grading whenever messages change - show from the start
-  useEffect(() => {
-    const grading = gradeConversation(messages);
-    setCompleteness(grading.completeness);
-    setEmpathy(grading.empathy);
-    setElicitedFactIds(grading.factsElicited.filter((f) => f.matched).map((f) => f.id));
-  }, [messages]);
 
   // Initialize session with narrator + first patient greeting
   useEffect(() => {
@@ -167,12 +156,22 @@ export default function InterviewPage() {
     }
   };
 
-  // Helper function to get badge color based on score
-  const getBadgeColor = (score: number, maxScore: number) => {
-    const percentage = (score / maxScore) * 100;
-    if (percentage >= 60) return 'bg-green-100 text-green-800 border-green-300';
-    if (percentage >= 40) return 'bg-yellow-100 text-yellow-800 border-yellow-300';
-    return 'bg-gray-100 text-gray-600 border-gray-300';
+  const handleEndInterview = () => {
+    setShowEndDialog(true);
+  };
+
+  const confirmEndInterview = () => {
+    // Save session data to localStorage for summary page
+    const sessionKey = `session_default_${sessionId}`;
+    const turns = messages.map(msg => ({
+      role: msg.role,
+      content: msg.content,
+      timestamp: Date.now()
+    }));
+    localStorage.setItem(sessionKey, JSON.stringify({ turns, mode, opened: true }));
+
+    // Navigate to summary page
+    router.push(`/interview/${sessionId}/summary`);
   };
 
   return (
@@ -180,65 +179,53 @@ export default function InterviewPage() {
       {/* Header */}
       <header className="bg-white border-b border-gray-200 px-4 py-3">
         <div className="max-w-6xl mx-auto">
-          {/* Row 1: Title and Mode Switcher */}
-          <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center justify-between">
             <div className="flex-shrink-0">
               <h1 className="text-lg sm:text-xl font-bold text-gray-900">Ms. Esposito Interview</h1>
               <p className="text-xs sm:text-sm text-gray-600">Session: {sessionId.slice(0, 8)}...</p>
             </div>
 
-            {/* MODE SWITCHER - ALWAYS VISIBLE */}
-            <div className="flex items-center gap-2 bg-gray-100 rounded-lg p-1.5">
+            <div className="flex items-center gap-3">
+              {/* MODE SWITCHER */}
+              <div className="flex items-center gap-2 bg-gray-100 rounded-lg p-1.5">
+                <Button
+                  variant={mode === 'text' ? 'default' : 'ghost'}
+                  size="lg"
+                  onClick={() => setMode('text')}
+                  className="gap-2 min-h-[48px] px-4 font-semibold"
+                  aria-label="Switch to text mode"
+                >
+                  <MessageSquare className="w-5 h-5" />
+                  TEXT
+                </Button>
+                <Button
+                  variant={mode === 'voice' ? 'default' : 'outline'}
+                  size="lg"
+                  onClick={() => setMode('voice')}
+                  className={`gap-2 min-h-[48px] px-4 font-semibold transition-all ${
+                    mode === 'voice'
+                      ? 'bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white border-0'
+                      : 'hover:bg-blue-50 hover:border-blue-300'
+                  }`}
+                  aria-label="Switch to voice mode"
+                >
+                  <Mic className="w-5 h-5" />
+                  🎤 VOICE
+                </Button>
+              </div>
+
+              {/* END INTERVIEW BUTTON */}
               <Button
-                variant={mode === 'text' ? 'default' : 'ghost'}
+                variant="destructive"
                 size="lg"
-                onClick={() => setMode('text')}
-                className="gap-2 min-h-[48px] px-4 font-semibold"
-                aria-label="Switch to text mode"
+                onClick={handleEndInterview}
+                className="gap-2 min-h-[48px]"
+                aria-label="End interview and see summary"
               >
-                <MessageSquare className="w-5 h-5" />
-                TEXT
-              </Button>
-              <Button
-                variant={mode === 'voice' ? 'default' : 'outline'}
-                size="lg"
-                onClick={() => setMode('voice')}
-                className={`gap-2 min-h-[48px] px-4 font-semibold transition-all ${
-                  mode === 'voice'
-                    ? 'bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white border-0'
-                    : 'hover:bg-blue-50 hover:border-blue-300'
-                }`}
-                aria-label="Switch to voice mode"
-              >
-                <Mic className="w-5 h-5" />
-                🎤 VOICE
+                <LogOut className="w-4 h-4" />
+                <span className="hidden sm:inline">End Interview</span>
               </Button>
             </div>
-          </div>
-
-          {/* Row 2: Grading Badges */}
-          <div className="flex items-center gap-2 flex-wrap">
-            <Badge
-              variant="outline"
-              className={`gap-1 ${getBadgeColor(completeness, 5)}`}
-            >
-              <span className="text-xs">Completeness:</span>
-              <span className="font-semibold">{completeness}/5</span>
-            </Badge>
-            <Badge
-              variant="outline"
-              className={`gap-1 ${getBadgeColor(empathy, 5)}`}
-            >
-              <span className="text-xs">Empathy:</span>
-              <span className="font-semibold">{empathy}/5</span>
-            </Badge>
-            <Badge
-              variant="outline"
-              className={`gap-1 ${getBadgeColor(elicitedFactIds.length, 11)}`}
-            >
-              <span className="text-xs">Facts:</span>
-              <span className="font-semibold">{elicitedFactIds.length}/11</span>
-            </Badge>
           </div>
         </div>
       </header>
@@ -382,6 +369,34 @@ export default function InterviewPage() {
           )}
         </Card>
       </div>
+
+      {/* End Interview Confirmation Dialog */}
+      {showEndDialog && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <Card className="max-w-md w-full p-6">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">End Interview?</h2>
+            <p className="text-gray-600 mb-6">
+              Are you sure you want to end this interview? You&apos;ll be taken to a summary page to review your performance.
+            </p>
+            <div className="flex gap-3">
+              <Button
+                variant="outline"
+                onClick={() => setShowEndDialog(false)}
+                className="flex-1"
+              >
+                Continue Interview
+              </Button>
+              <Button
+                variant="destructive"
+                onClick={confirmEndInterview}
+                className="flex-1"
+              >
+                End & See Summary
+              </Button>
+            </div>
+          </Card>
+        </div>
+      )}
     </div>
   );
 }

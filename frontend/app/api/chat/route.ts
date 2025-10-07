@@ -76,8 +76,8 @@ export async function POST(req: NextRequest) {
         model: process.env.AZURE_OPENAI_CHAT_DEPLOYMENT!,
         messages,
         stream: false,
-        max_tokens: 150,
-        temperature: 0.7
+        max_tokens: 100,
+        temperature: 0.5
       });
 
       const response = completion.choices[0]?.message?.content || '';
@@ -103,8 +103,8 @@ export async function POST(req: NextRequest) {
       model: process.env.AZURE_OPENAI_CHAT_DEPLOYMENT!,
       messages,
       stream: true,
-      max_tokens: 150,
-      temperature: 0.7
+      max_tokens: 100,
+      temperature: 0.5
     });
 
     // Convert OpenAI stream to SSE format (Server-Sent Events)
