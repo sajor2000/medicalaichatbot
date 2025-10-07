@@ -33,6 +33,19 @@ export function VoiceClient({ sessionId, onTranscript }: VoiceClientProps) {
       const speechKey = process.env.NEXT_PUBLIC_AZURE_SPEECH_KEY!;
       const speechRegion = process.env.NEXT_PUBLIC_AZURE_SPEECH_REGION!;
 
+      // Debug logging for environment variables
+      console.log('[VoiceClient] Environment variables check:');
+      console.log('[VoiceClient] NEXT_PUBLIC_AZURE_SPEECH_KEY:', speechKey ? 'SET (length: ' + speechKey.length + ')' : 'UNDEFINED');
+      console.log('[VoiceClient] NEXT_PUBLIC_AZURE_SPEECH_REGION:', speechRegion ? speechRegion : 'UNDEFINED');
+
+      if (!speechKey || !speechRegion) {
+        const errorMsg = 'Azure Speech environment variables not configured. Please set NEXT_PUBLIC_AZURE_SPEECH_KEY and NEXT_PUBLIC_AZURE_SPEECH_REGION';
+        console.error('[VoiceClient]', errorMsg);
+        setStatus('Error: Missing environment variables');
+        alert(errorMsg);
+        return;
+      }
+
       // Configure Speech SDK
       const speechConfig = SpeechSDK.SpeechConfig.fromSubscription(speechKey, speechRegion);
       speechConfig.speechRecognitionLanguage = 'en-US';
