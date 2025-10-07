@@ -1,0 +1,249 @@
+{
+  "case_id": "RMD561_Esposito",
+  "version": "1.0",
+  "patient": {
+    "name": "Ms. Esposito",
+    "age": 31,
+    "sex": "F",
+    "greeting": "Hi, my name is Ms Esposito. I am here for my clinical visit. I hope you can help me!"
+  },
+  "triage_note": "Ms. Esposito, 31F. Woke at 06:00 with fever (102.5°F) and chills. Fatigue × 3 days; right-sided abdominal/flank pain. Returned from Dominican Republic 2 days ago. History: ruptured ectopic pregnancy 2018 (right salpingectomy). POC pregnancy test negative.",
+
+  "must_elicit_facts": [
+    {
+      "id": "dysuria",
+      "description": "Burning/tingling with urination",
+      "keywords": ["burn", "urination", "pee", "urinate", "dysuria", "tingling", "painful"],
+      "weight": 10,
+      "category": "HPI"
+    },
+    {
+      "id": "flank_pain_location",
+      "description": "Right flank pain with radiation to groin",
+      "keywords": ["where", "location", "flank", "side", "abdomen", "belly"],
+      "weight": 10,
+      "category": "HPI"
+    },
+    {
+      "id": "pain_quality",
+      "description": "Crampy pain, sometimes sharp",
+      "keywords": ["feel like", "describe", "quality", "type", "kind", "what does"],
+      "weight": 8,
+      "category": "HPI"
+    },
+    {
+      "id": "pain_severity",
+      "description": "Pain severity 7/10",
+      "keywords": ["how bad", "scale", "severity", "out of ten", "rate"],
+      "weight": 7,
+      "category": "HPI"
+    },
+    {
+      "id": "fever_chills",
+      "description": "Fever 102.5°F with shaking chills",
+      "keywords": ["fever", "temperature", "chills", "shaking", "how high"],
+      "weight": 9,
+      "category": "HPI"
+    },
+    {
+      "id": "onset_timing",
+      "description": "Symptoms began 3 days ago, worsened this morning",
+      "keywords": ["when start", "began", "onset", "how long", "started"],
+      "weight": 8,
+      "category": "HPI"
+    },
+    {
+      "id": "travel_history",
+      "description": "Recent trip to Dominican Republic",
+      "keywords": ["travel", "trip", "vacation", "dominican", "where been"],
+      "weight": 8,
+      "category": "Social"
+    },
+    {
+      "id": "allergies",
+      "description": "Penicillin allergy (rash)",
+      "keywords": ["allergies", "allergic", "penicillin", "reactions"],
+      "weight": 10,
+      "category": "Allergies"
+    },
+    {
+      "id": "sexual_history",
+      "description": "Sexually active, monogamous 7-year partner",
+      "keywords": ["sexually active", "partner", "sex", "contraception", "intimate"],
+      "weight": 7,
+      "category": "Social"
+    },
+    {
+      "id": "lmp",
+      "description": "Last menstrual period 1.5 weeks ago",
+      "keywords": ["period", "menstrual", "lmp", "last period", "cycle"],
+      "weight": 6,
+      "category": "OB/GYN"
+    },
+    {
+      "id": "pmh",
+      "description": "PCOS, pre-diabetes, ectopic pregnancy history",
+      "keywords": ["medical history", "conditions", "pmh", "pcos", "diabetes", "health problems"],
+      "weight": 6,
+      "category": "PMH"
+    }
+  ],
+
+  "qa_pairs": [
+    {
+      "q": ["What brings you in today?", "Why are you here?", "chief complaint", "what's going on"],
+      "a": "I woke up this morning with a high fever, chills, and a really bad pain along my right side."
+    },
+    {
+      "q": ["When did the symptoms start?", "When did this begin?", "how long", "onset"],
+      "a": "The tiredness began a couple of days ago on my trip, but the fever and pain hit early this morning."
+    },
+    {
+      "q": ["Any burning when you pee?", "Dysuria?", "Pain with urination?", "burning urination", "urinating"],
+      "a": "Yes—last night it tingled, and this morning it definitely burned."
+    },
+    {
+      "q": ["Are you sexually active?", "Sexual activity?", "sexual history", "sex life"],
+      "a": "Yes, with my partner of seven years—we're monogamous."
+    },
+    {
+      "q": ["Any medication allergies?", "Allergies?", "allergic", "drug allergies"],
+      "a": "Penicillin—I got a rash as a kid."
+    },
+    {
+      "q": ["Where is the pain?", "Pain location?", "where hurt", "where does it hurt"],
+      "a": "On the right side of my belly, more my flank really."
+    },
+    {
+      "q": ["When did it start?", "Pain onset?", "pain begin", "when pain start"],
+      "a": "Around six this morning."
+    },
+    {
+      "q": ["Travel?", "Recent travel?", "trip", "vacation", "been anywhere"],
+      "a": "I got back from the Dominican Republic two days ago."
+    },
+    {
+      "q": ["Pregnant?", "Pregnancy test?", "could you be pregnant"],
+      "a": "The test they did here was negative."
+    },
+    {
+      "q": ["Pain quality?", "What does the pain feel like?", "describe pain", "type of pain"],
+      "a": "It's kind of crampy usually but sometimes kind of sharp."
+    },
+    {
+      "q": ["Pain severity?", "How bad is the pain?", "scale", "rate the pain"],
+      "a": "About a seven out of ten."
+    },
+    {
+      "q": ["Pain timing?", "Constant or intermittent?", "comes and goes"],
+      "a": "It's constant, sometimes it will get even worse but I haven't gotten much relief."
+    },
+    {
+      "q": ["Pain radiation?", "Does it spread anywhere?", "radiate", "shoot"],
+      "a": "Sometimes it will shoot down to my groin on the same side."
+    },
+    {
+      "q": ["medical history", "health problems", "conditions", "pmh", "past medical"],
+      "a": "I have PCOS since 2014 and pre-diabetes. I also had an ectopic pregnancy that ruptured five years ago."
+    },
+    {
+      "q": ["medications", "taking any medicine", "drugs", "meds"],
+      "a": "Just triamcinolone lotion for my eczema when I need it."
+    },
+    {
+      "q": ["nausea", "vomiting", "throwing up", "throw up"],
+      "a": "I threw up once this morning when the pain got really bad. Not nauseous now though."
+    },
+    {
+      "q": ["cough", "breathing", "shortness of breath", "sob"],
+      "a": "No cough or trouble breathing."
+    },
+    {
+      "q": ["last period", "menstrual period", "lmp", "cycle", "menses"],
+      "a": "About a week and a half ago. My periods are irregular though."
+    },
+    {
+      "q": ["chest pain", "heart", "chest discomfort"],
+      "a": "No chest pain."
+    },
+    {
+      "q": ["diarrhea", "bowel movements", "stomach issues"],
+      "a": "No diarrhea. Had a bit of a rumbly stomach on vacation from the buffet."
+    },
+    {
+      "q": ["work", "job", "occupation", "what do you do"],
+      "a": "I'm a manager at Target."
+    },
+    {
+      "q": ["family", "children", "kids", "dependents"],
+      "a": "I have a three-year-old son, Antonio. He's healthy."
+    },
+    {
+      "q": ["smoking", "tobacco", "cigarettes"],
+      "a": "No, I've never smoked."
+    },
+    {
+      "q": ["alcohol", "drinking", "drink"],
+      "a": "Just a glass or two of wine on special occasions."
+    },
+    {
+      "q": ["drugs", "recreational", "marijuana", "substances"],
+      "a": "I use marijuana occasionally, maybe once or twice a month."
+    }
+  ],
+
+  "physical_exam": {
+    "vitals": {
+      "temperature": "102.5°F",
+      "blood_pressure": "99/57 mmHg",
+      "heart_rate": "110 bpm",
+      "respiratory_rate": "18",
+      "spo2": "99% on room air",
+      "bmi": "31 kg/m²"
+    },
+    "findings": {
+      "general": "Fatigued appearing, no acute distress",
+      "heent": "No scleral icterus, no oral lesions",
+      "neck": "No lymphadenopathy, able to touch chin to chest",
+      "heart": "RRR, S1S2 No M/R/G",
+      "lungs": "Clear bilaterally",
+      "abdomen": "Soft, mild tenderness diffusely, worse RLQ",
+      "gu": "Tenderness to palpation of right flank",
+      "skin": "Scaly, erythematous rash on upper chest (eczema)"
+    }
+  },
+
+  "diagnosis": {
+    "primary": "Pyelonephritis with UTI",
+    "concern": "Sepsis (bacteremia from E. coli)",
+    "teaching_points": [
+      "Classic triad: flank pain, dysuria, fever",
+      "Dominican Republic travel is red herring (common things are common)",
+      "Vitals concerning for sepsis: hypotension, tachycardia",
+      "Penicillin allergy affects antibiotic choice"
+    ]
+  },
+
+  "grading_rubric": {
+    "completeness_weights": {
+      "chief_complaint": 5,
+      "hpi_opqrst": 25,
+      "associated_symptoms": 10,
+      "pertinent_positives_negatives": 15,
+      "pmh": 10,
+      "medications": 5,
+      "allergies": 10,
+      "social_history": 10,
+      "family_history": 5,
+      "patient_perspective": 3,
+      "patient_impact": 2
+    },
+    "empathy_markers": {
+      "open_ended_question": 2,
+      "acknowledgment_phrase": 1,
+      "patient_perspective_explored": 3,
+      "patient_impact_explored": 2,
+      "empathetic_statement": 2
+    }
+  }
+}

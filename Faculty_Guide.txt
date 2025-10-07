@@ -1,0 +1,703 @@
+
+
+Practitioner (PRAC) Role Leader 
+Christine Tsai, MD
+christine_s_tsai@rush.edu 
+
+Educator  (EDUC) Role Leader
+Susan B  Glick, MD, MHPE
+susan_b_glick@rush.edu 
+
+
+RMD 561
+Host Defense & Host Response
+Clinical Reasoning Rounds (Practitioner)
+&
+Self Directed Learning (Educator)
+Faculty Guide
+
+
+
+
+Rush Medical College
+
+Clinical Reasoning Rounds
+Clinical Reasoning Rounds (Practitioner) and Self-Directed Learning (Educator)  
+Table Of Contents
+Table Of Contents	2
+Credits	3
+Schedule	4
+Practitioner References in Entrada	5
+Introduction:	7
+Activity 1: Preparing to Take the Patient’s History	8
+Activity 2: History Taking	11
+Activity 3: Refining your Differential Diagnosis and Obtaining a Physical Exam	16
+Activity 4: Prioritizing your Differential Diagnosis and Ordering Diagnostic Tests	19
+Activity 5: Debrief Test Results and Final Diagnosis	22
+Activity 6: Completing and Submitting your Self-Directed Learning Form	29
+Take Home Points	30
+After the Classroom Session	31
+
+
+Credits 
+Activity Design: David Hodge, MD, Attending, Division of Hospital Medicine
+Role Leaders: Christine Tsai, MD, FHM & Susan B Glick, MD, MHPE 
+ 
+
+Schedule 
+
+	•	10 minutes - Intro: Reviewing the SDL Assignment, Answering any questions
+	•	90 minutes - Activities 1-5, divided as per the CE and students
+	•	10 minutes - Activity 6
+
+
+Practitioner References in Entrada
+
+Students: Apply your knowledge from the materials/knowledge below to this classroom session
+
+	•	RMC Standardized H&P  
+	•	M1 Master Practitioner Self Study 
+	•	Rush History Taking Guide
+	•	Complete Physical Exam Checklist  
+	•	Intro to Laboratory Testing 
+	•	Intro to Imaging Reference Guides: X-ray, CT, MRI, Ultrasound 
+ 
+These references are located in the Practitioner General Resources folder in Entrada.  Please refer to these during this session and your BSci sessions!  
+
+
+To CEs:
+
+This is the first time students will be doing a self-directed learning exercise.  They will need your help identifying good clinical questions and clarifying how to complete the form.  Please spend a few minutes at the beginning of class asking if they have any questions about the Educator SDL Activity. 
+ 
+The main Educator goals are 1) for the students to start to do some true self directed learning (BSci self study guides don’t count as SDL because the school is telling them what topic to read) and 2) learn how to use the form to demonstrate their SDL.  Per LCME, they need to receive feedback on their SDL - both verbal (a few students during class) and written feedback (all students).  
+
+The main Practitioner goals of this session are 1) to have students take a chief complaint, HPI including associated symptoms, pertinent positives/negatives, patient impact and patient perspective and 2) to discuss vital signs.  This will help them prepare for their formative and summative Clinical Skills Assessment (CSA) this block.  If they have questions about the CSA, please direct them to the Behavioral Assessment Team and the Entrada → Assessment → Behavioral Assessment Guides and let them know that in the Assessment section of Entrada, CSA self study guides will be posted a week prior to the assessment.   If there’s time, have them start thinking about assessments/diagnostic/treatment plans. 
+
+A note on timing: This case is long and the M1s are novices, so depending on your group, you may have to adjust which parts you emphasize and which you de-emphasize.  We would like for you to give the students a little bit of time in class to do research, but you can decide where (we have some suggestions). Alternatively, the rest of the case can be shrunk down a bit to make room for time and you can do more revealing of the labs/data/final diagnosis if there isn’t time for them to justify all their tests.  Please let us know if you have any questions!  Thanks! 
+
+FOR THE EDUCATOR PART OF THIS SESSION: 
+
+Practicing physicians most often ask clinical questions and seek answers to them (i.e., perform self-directed learning) while caring for patients, so the Clinical Reasoning Rounds sessions are a natural place to teach students about how doctors practice self-directed learning.  As the session unfolds, please talk with the students about what kinds of clinical questions you have and where you might find answers to those questions (whether textbooks, journal articles, online resources like UpToDate or consultation with colleagues). Help them articulate their own clinical questions and ideas about where to find the information that will allow them to answer those questions. 
+ 
+Please weigh in about the strengths and limitations of the resource(s) they’ve selected to answer their clinical questions. Please be super practical when commenting on their resource choice. Think about what you’d like them to use in their real clinical life. For example, is it ever okay to use Wikipedia to answer a clinical question? How about a random website/video? Why is UpToDate many clinicians’ go-to resource? And when, in real life, would you perform a literature search/read journal articles?  What is the role of AI/ChatGPT in clinical care?
+As the session unfolds, continue to ask students to share any of their self-directed learning that's relevant to the topic you're discussing. In real time, please give the students any feedback you have about how they went about finding the information to answer their question (especially if you think they did a great job or if you know of a better way to address their learning need/clinical question). Also feel free to give feedback about what they learned from their reading/the resources they used. Please do this organically, the way you might if you were working the students clinically. It should feel natural, not forced. 
+ 
+After the session, please grade your students’ self-directed learning forms in Entrada. To access the forms, in Entrada click on My Profile, then Grading Tasks, then type the course number in the search bar. Click on Assessment of Self-Directed Learning and you’ll see the list of students assigned to you. For each student, click Grade, then read the student’s responses and select yes or no for each question. Any time you select “no,” provide a brief (i.e., 1-3 sentences) suggestion for improvement. 
+
+Students who submit their SDL form after the deadline receive a score of 0%.  This has, at times, made the difference between course passing and course failure.  Students who thought they submitted but did not, do not get credit, so it is the student’s responsibility to ensure their SDL is uploaded and uploaded correctly. 
+ 
+
+Introduction: 
+ 
+The main goals of this activity are to: 
+ 
+	•	Get used to thinking about your differential diagnosis from the time you hear the patient’s chief complaint 
+	•	Practice taking a patient’s history in the way it is traditionally obtained: chief complaint/chief concern, history of present illness (HPI), past medical history (PMH), medications, allergies...  etc.
+	•	Practice clinical reasoning including identifying associated symptoms, pertinent positive and pertinent negative features that point towards or away from certain diagnoses 
+	•	Fill in knowledge gaps with self-directed learning  
+ 
+Case  
+ 
+You are a medical student who is preparing to meet Ms. Esposito, your attending physician’s next patient in the Emergency Department. You see the brief triage note below, but no one has taken a full history yet: 
+ 
+Rush University ED Triage Note 
+  
+Ms. Esposito, a 31-year-old female. Woke up at 0600 with “fever and chills.” In addition, she feels fatigued and has some right sided abdominal pain. Traveled to the Dominican Republic last week for vacation. Had ectopic pregnancy 5 years ago. Point of Care Pregnancy test is negative. 
+ 
+
+
+Activity 1: Preparing to Take the Patient’s History 
+ 
+Often before a doctor begins seeing a new patient, they’ll reflect on the patient’s chief concern to ensure they’re prepared to care for a patient with that health issue. This is especially important for medical students and for doctors who are early in their careers, although it’s also helpful for experienced physicians who are seeing a patient with a problem the doctor hasn’t encountered in a while or if they’re wondering if there are new guidelines and recommendations.
+ 
+Imagine you have 15 minutes before you see Ms. Esposito. Working in small groups, think about your differential diagnosis for Ms. Esposito’s health concerns. Please use any resources that you would like (e.g., textbooks, UpToDate, a literature search (e.g., using PubMed), a Google search, class notes, third party study materials (e.g. Sketchy/Pathoma/Anki/AMBOSS), AI apps like chatGPT, consultants such as faculty members and classmates, personal experience...) to determine the differential diagnosis. Then think about the questions you would like to ask the patient to help you rule in or rule out the diagnoses on your list. Write down some ideas below.  
+ 
+CEs: Please review the Educator Resource Folder for information about self-directed learning and a suggested resource guide for students. 
+ 
+What is on your differential diagnosis?  How might you organize your thoughts (so you don’t miss something)? 
+ 
+The goal here is to get students to both come up with a broad set of possible diagnoses and then learn how to organize them.  It’s early in M1 year, so they will have some classroom knowledge, but mostly may be relying on their own prior experience.  This is a great opportunity for them to figure out the boundaries of their knowledge and do a little bit more reading that might improve their history taking, physical exam, or clinical reasoning skills.  The goal is to avoid heuristics/biases/cognitive errors such as anchoring, premature closure of diagnosis, availability, etc. 
+ 
+Of note, they’ll have learned about UTIs and E. coli (though haven’t had a specific E. coli UTI case), but not that sepsis can come from pyelo, or that pyelo can come from UTIs. So again, this is more about the process than the destination. 
+ 
+Some approaches to highlight might be: 
+	•	Head to toe 
+	•	Organ based 
+	•	Anatomic (out to in for abdominal pain – skin, fat, muscles, nerves, organs) 
+	•	Infectious / Non-infectious (for fever) 
+ 
+
+As an example: 
+Infectious causes of fever 
+	•	Central Nervous System infection: meningitis, encephalitis 
+	•	Ear infection 
+	•	Upper respiratory tract infection 
+	•	Dental infection 
+	•	Lung infection: Pneumonia, Influenza, Common Cold/Respiratory Viruses (Think Kamra Thompson Case) 
+	•	Gastrointestinal infection: (Think Jenna Wilson Case) 
+	•	Urinary tract infection 
+	•	GU Infections - STD’s (haven’t explicitly learned but should know… from life); Pelvic Inflammatory Disease (this would realistically be on the differential but they haven’t learned it yet, can mention or leave out depending on timing / how the students are handling all the info). Pelvic abscess 2/2 ruptured ectopic (only mentioning bc she had prior ectopic, but negative POC UPreg pretty effectively rules this out, which was part of her triage). 
+	•	Blood stream infection  
+	•	Skin infection/cellulitis/abscess 
+	•	Travel related: vector borne, water, hygiene - Malaria, Chikungunya, Yellow Fever, Dengue, Lassa, endemic diarrheal illnesses 
+ 
+Non infectious causes of fever 
+Autoimmune / Rheumatologic 
+Malignancy 
+Drug induced 
+ 
+Teaching point:  Students may call a fever they don’t know the cause of as “Fever of Unknown Origin” (FUO).  Please clarify with them that FUO is not just when we do not know the diagnosis (fever of unclear etiology), but is actually a specific name for a fever that lasts 3 weeks or longer with temperatures > 100.9F without a clear diagnosis despite investigating for at least 1 week.  
+ 
+How do you initially approach this patient?  What questions do you ask? 
+ 
+Faculty to students:  
+“You might want to start out open ended to see what kind of information you can gather.  As the patient runs out of things to say or if they go off on a tangent, it can be helpful to redirect them to specific questions or clarify missing or incomplete pieces of information. “ 
+ 
+Sample questions might include:  
+Open ended: 
+How can I help you? 
+What brings you in today? 
+Tell me what is going on.  When did it start?  What happened next?  
+What made you decide to seek medical attention today (vs yesterday/tomorrow)?  
+When was the last time you felt well?  
+ 
+Focused: 
+Questions based on the illness scripts (classic presentations) of diagnoses being considered.  
+ 
+For the students’ Clinical Skills Assessment (CSA) this block, they will be expected to elicit a chief complaint and HPI which includes the basics like OPQRST, any associated symptoms, beginning pertinent positives/negatives, patient impact and patient perspective.  They will be given a multiple choice quiz at the end of their standardized patient encounter that gets at some of the following details below.  
+Students pretty early on learn to memorize OPQRST, but they later start to write their notes in this order, which doesn't quite make sense (P seems out of place), so it may be worth emphasizing that while OPQRST should be memorized (or OLDCARTS), it’s more of a crutch than aspirational.  It should not entirely replace “getting the story”.  Onset then Palliating/Provoking basically encourages students to ask about what makes a symptom better or worse before the symptom is even defined/characterized, so encourage them to put P towards the end OQSTRP might be a better order, although harder to remember than OPQRST. Perhaps, “Oh Quickly Start To Read Pathoma” as students often do? 
+ 
+Associated symptoms can sometimes help create pivot points or historical features that help lead down certain diagnostic paths.  These may need their own OPQRST type details. 
+ 
+Regarding pertinent positives/negatives, we teach them in their self study guide that by asking some Review of Systems questions, they can start to come up with some pertinents.  For example, in a person with shortness of breath, if they ask the cardiac and pulmonary review of systems, they might get some pertinent details.  Pertinent is often the million dollar question and is defined by their differential diagnosis; if the detail helps increase or decrease the likelihood of a specific diagnosis, it can be considered pertinent.  You can teach that pertinent positives/negatives may also be beyond symptoms – sick contacts, travel, risk factors/social/family history, etc. - if it tips the diagnosis towards or away from something on the list. 
+ 
+Patient perspective gets to what the patient thinks might be going on diagnostically – or what they are most concerned about might be the diagnosis, which largely comes from the Communicator Role curriculum, but can be helpful diagnostically. 
+ 
+Patient impact (how the chief concern is affecting the patient) also helps to build rapport, but can sometimes be thought of as an extension of severity or a way to get at associated symptoms.  
+ 
+It would be helpful for CEs to reinforce the above concepts to the students.  
+ 
+Given your differential diagnosis, what questions would you like to ask this patient?  
+ 
+ 
+Activity 2: History Taking  
+ 
+CEs: This is a 31 yo patient who presents with sepsis from pyelonephritis, likely due to UTI that she got on a romantic vacation with her partner. She has classic flank pain, dysuria and fever indicating UTI → pyelo, the sepsis won’t be apparent until vitals and ultimately blood cultures. 
+ 
+The focus of the case is about walking through a clinical scenario with HPI & Physical Exam and developing a differential and to develop some self-directed learning techniques in the process, not about getting the exact diagnosis. Her travel to the Dominican Republic is a “red herring,” but she really has no symptoms pointing to endemic infectious diseases from there. Encourage the students not to anchor on their first impressions (e.g., an illness related to travel to the Dominican Republic) and that common things are common (e.g., UTI, pyelonephritis). That said, there are a few other distractors that in real life would come with this presentation. The sepsis portion of the case is only in the debrief because they haven’t formally learned about sepsis or shock yet, but is a common source of confusion for students, so may benefit from some repetition throughout the preclerkship curriculum.  
+ 
+This patient in real life did not initially disclose dysuria, a critical symptom to guide the diagnosis, she was more concerned about the fever and abdominal pain. But eventually disclosed “tingling” that progressed to burning the morning of presentation. At your discretion, disclose it in the “open ended questions” below or save it for the review of systems.  
+
+A CE teaching point can be the importance of being precise in our language and questions as well as asking the same question in different ways to ensure consistency in the answer. 
+ 
+Students: As a class, obtain a chief complaint, history of present illness, past medical history, surgical history, medications, allergies, social history and family history.  
+(Reminder! Look at the M1 Master Practitioner Self Study Guide and Rush Standardized H&P for details on the components.  Also make sure you have memorized the order of the H&P - you will need it over your lifetime, so worth committing to memory now!)
+ 
+CEs: the case is provided in Q&A format here and also in a class H&P format below. 
+ 
+CHRONOLOGY 
+How did this all begin?  Can you tell me what happened next? I just wasn’t feeling great since the last couple days of the vacation, and have been feeling increasingly fatigued and then this morning I was so tired I could barely get out of bed and the flank pain got a lot worse, than I remembered then I had those shaking chills and then felt hot. Oh and the tingling when I urinate started last night like we talked about, too. That actually got worse this morning now that you mention it. 
+ 
+When is the last time you felt well? Hmm, I guess it’s been almost 3 days since I really felt normal, but it definitely all got much worse this morning. 
+
+Onset - How long have you had the fever? Just this morning 
+	•	Fatigue? x ~3 days;  
+	•	Abdominal pain? started last night, got a lot worse this morning 
+	•	Vomiting? x1 this morning with a spasm of pain, no longer nauseous 
+	•	If asked: “tingling” with urination last night, more frank burning this morning  
+Palliative/Provoking - Do you take anything for the fever?  
+	•	No I decided to come to the ER because of how bad I felt and didn’t take anything before I left.   
+Anything make the fever worse?   
+	•	Warm clothing, blankets 
+Does anything make the pain better or worse? 
+	•	The pain meds you’re giving me make it better. Before I came here certain positions worsened my stomach pain, like if I laid flat or moved around too much it hurt. 
+Quality - This question doesn’t usually make sense for fever, but can be important in diseases with cyclical fever curves. Quality of pain can be very informative, though. 
+	•	It’s hard to describe the pain. It’s kind of crampy usually but sometimes kind of sharp. 
+Region/Radiation - Not relevant for fever, but very applicable for pain.  Does your pain radiate anywhere? 
+	•	My abdominal pain is constant, it’s actually more on my right flank than stomach, but sometimes it will shoot down to my groin on the same side, too.  
+Severity - How high have your fevers been? Have you measured your temperature at home? Any shaking chills? 
+	•	I didn’t measure at home but I think you guys told me it was 102.5 when you measured it here. And yeah, this morning before I came in I got very cold with shaking chills and then I felt really hot and broke out in a sweat. 
+Time/Temporal - Sometimes it’s helpful to know globally if someone is getting better or worse, or break down the timing of each symptom.  
+ 
+How were you feeling before the fever started? What was the order of the fever / abdominal pain / fatigue / dysuria? 
+ 
+	•	I got back from a vacation to the Dominican Republic with my baby’s father two days ago. I’ve felt tired since I got back but I thought it was just fatigue from the travel, then this morning I broke out in a fever like I said and knew something else was wrong. Also when I got up out of bed the pain was so bad that I threw up once. But I don’t feel nauseous now.  
+ 
+Is the pain constant? Or does it come in waves? 
+	•	It’s constant, sometimes it will get even worse but since it started this morning I haven’t gotten much relief, except with the pain meds. 
+ 
+Do you have any other symptoms? Any that seem to be related? I think you covered it all, doc.  
+ 
+ASSOCIATED SYMPTOMS or PERTINENT POSITIVES/NEGATIVES 
+Do you have a sore throat, runny nose? No 
+Do you have a cough? No 
+Do you have any shortness of breath? No 
+Are you vaccinated against COVID? Yes, and boosted 
+Do you have pain in your eyes, pain in your teeth? No 
+Do you have any chest pain? No 
+Do you have any abdominal pain, nausea/vomiting? Yes, as above in OPQRST 
+Do you have any joint pain or muscle pain? I feel kind of sore all over, but not really specific to joints or muscles. It started when all my other symptoms started. Feels kind of mild, achy in my muscles and joints. No swelling or warmth of the joints though. 
+Do you have any burning with urination, urinary urgency, flank pain? Yeah I did feel some tingling when I urinated last night and this morning it was actually kind of painful, like burning. 
+Did you have any blood in your urine or notice a foul smell? No 
+Do you have any rashes? Yeah I have eczema and it frequently gets worse in warm weather, so it got a little worse on vacation. Otherwise, no. Well, maybe I got a bit sunburned on my nose and back, too. 
+Do you have any headache? No, not really. 
+Do you have any vision changes, hearing changes, or stiff neck? No, none of those things.  
+ 
+OTHER POTENTIAL PERTINENT POSITIVES/NEGATIVES: 
+-Do you live with anyone? Do any of them have a fever? What do you do for work? Is anyone at work sick with fever? (asking about potential sources of viral infections which frequently spread person to person) 
+I live with my baby’s father and my 3 year old son, Antonio. They’re both doing ok. I’m a manager at Target.  
+ 
+-Are you currently sexually active with your partner? Are you guys each other’s only intimate partner? 
+- Hah, yeah we’re sexually active, that’s how we have a kid, doc! And yeah, we’re monogamous with one another.  
+ 
+-Have either of you ever had an STD? (assessing for her risk of Pelvic Inflammatory Disease / likelihood this presentation is an STD) 
+- I think he had gonorrhea before we met, and I had chlamydia once when I was a teenager, but neither of us have had any since we’ve been together. 
+ 
+-Are you currently on birth control or do you use protection (it comes up later but she had a ruptured ectopic pregnancy previously)? 
+-No, I’ve never been on it, but my doctor has recommended it because she thinks it will help regulate my periods. No, we don’t use condoms. We’d both be happy with another baby and we trust each other, so we don’t bother. 
+ 
+-When was your last period? 
+-It was actually pretty recent, it ended a few days before the trip started, thankfully. But usually I get them every 2-4 months. 
+ 
+-How long was your trip in the Dominican Republic? Did you stay at a resort or did you travel to more rural areas while you were there too? 
+- It was just a short getaway – 4 days there plus a day to travel on each end. We were mostly at the resort. We did one of those day trip things to ride horses on a beach but it was all coordinated through the resort. 
+ 
+-Did you get any diarrhea while you were there? Or do you have any now? 
+ - No diarrhea but I did have kind of a rumbly stomach and felt bloated after a couple days there. Chalked it up to overdoing it at the buffet. 
+ 
+-Have you had any recent insect or tick bites? (asking about arthropod borne infections) We definitely got bitten by mosquitos on that day trip, nothing crazy though. No tick bites.  
+ 
+-Have you started any new medications recently? 
+-No 
+ 
+-Do you ever inject drugs? (asking about potential bacterial infection introduced by dirty needles/works – I usually lead up to this with smoking and EtOH to normalize the question series a little bit, would preface it with why you’re asking or say “I ask everybody”, etc.)  
+-No 
+ 
+PATIENT PERSPECTIVE: 
+What do you think is going on?  I’m most worried about some kind of infection I might have picked up on vacation 
+ 
+PATIENT IMPACT: 
+How is this concern affecting your life?  I have no energy so I can’t work or get anything done 
+ 
+
+Teaching Points: Ways to think about Infectious causes of fever:  
+	•	Surfaces where the body meets the outside world, kind of an analogue for “systems based” diagnoses with other chief complaints, which itself could still be applicable to fever depending on context 
+	•	 “Where did it come from?” Having an idea of where it came from can help you determine what it might be - e.g. viral gastro from a toddler in daycare, endemic diarrhea from travel, STD from sexual partner. 
+	•	Chronology – important to any chief complaint, really and sometimes all these specific questions can make the story feel disjointed and so it can be helpful to ask some more general questions to better assess the chronology of the patient’s story.   
+ 
+*Clinician Educators:  If there are good social history questions the students ask, but we have not answered here, feel free to make up your own answer and/or open it up for discussion as to why they felt that question was important.  What were the students thinking about when asking that question?  Why/How/Where did they come up with that question? 
+ 
+CC:
+Fever, fatigue and abdominal pain
+ 
+HPI: 
+ 
+Ms. Esposito is a 31 yo F with PMH obesity, PCOS, ruptured ectopic pregnancy in 2018 s/p right salpingectomy, who presents with a fever of 102.5, with associated lower abdominal and right flank pain, dysuria, and fatigue. She returned from a short vacation to the Dominican Republic with her partner two days ago. She felt fatigued at the end of her trip and then developed her other symptoms last night and had fevers and chills this morning, prompting her to come to the ER. 
+ 
+Her fever and chills started the morning of presentation. She did not measure it at home, but it was 102.5 on arrival to the ER. She did not take anything for it at home before coming to the ER, but because of her recent travel and the sudden onset and severity, she decided to come in. 
+ 
+She had mild dysuria/”tingling” the night prior to presentation that worsened the morning she presented to frank burning with urination. She has not noticed any blood or foul smell in her urine. Her right flank and lower abdominal pain also started this morning. She describes it primarily as constant and “crampy” but sometimes it is sharp, especially when it radiates to her groin. It can be worsened by some positions or moving too much, but otherwise she cannot identify any triggers. Resting and pain medications help the pain. The pain got so severe that she vomited once but she is no longer nauseous.  She does not routinely get urinary tract infections.  
+ 
+She denies upper or lower respiratory symptoms including sore throat, difficulty breathing, cough, or sputum. She also denies chest pain. She denies diarrhea, constipation, joint pains, or myalgias. She has no known sick contacts, including her partner with whom she vacationed.  She is vaccinated and boosted against Covid.  
+ 
+She had an STD once many years ago, but she and her partner have not had any since starting their relationship together and as far as she knows they are monogamous. They do not use protection and she is not on birth control pills. Her menstrual cycle is irregular but last menses was ~1.5 weeks ago. 
+ 
+She denies new medications, and has no known personal or family history of autoimmune/rheumatologic diseases.  
+ 
+She is most concerned for an infection she picked up on vacation and notes that she is currently unable to work due to her symptoms.  
+ 
+Note, a key point here is that if you are concerned about infection on your differential, asking about TRAVEL history is important.  She also had multiple symptoms, so these were sometimes addressed separately in the HPI since it is not clear at the outset if these symptoms are related to a single diagnosis or multiple diagnoses. 
+ 
+Past medical history 
+Ruptured ectopic pregnancy in 2018 
+Polycystic ovarian syndrome (PCOS), diagnosed in 2014, not on medications 
+Prediabetes (A1c 5.8 last checked with PCP 6 months ago) 
+Obesity, weight has been stable, tries to eat healthy
+Eczema, mild 
+ 
+Past surgical history 
+Right salpingectomy 5 years ago s/p rupture ectopic pregnancy 
+Appendectomy 25 years ago 
+ 
+Current medications -  
+Topical Triamcinolone Lotion 0.1% 
+ 
+Allergies 
+Penicillin, rash during childhood, denies any symptoms of anaphylaxis 
+ 
+Social History 
+	•	No tobacco currently, never smoker 
+	•	Drinks 1-2 glasses of wine on special occasions only, no hx of heavy EtOH use 
+	•	Occasional marijuana use, 1-2 times a month, no other illicit drug use 
+	•	Only sexually active with long term partner of 7 years, has only ever been with men, has had 4 lifetime partners, no history of sexual trauma, has been pregnant twice, once had a spontaneous miscarriage and second pregnancy resulted in live birth of her son who is three
+	•	
+	•	Originally from the Humboldt Park neighborhood in Chicago, parents and her sister are still in the area
+	•	Lives with her partner and her son in a rented apartment for the last 3 years
+	•	Graduated from CPS high school and has an associates degree, is interested in pursuing a Bachelor’s after her son starts kindergarten
+	•	Works at Target as a manager, does some desk work but also walks around the store a lot of the day 
+	•	Doesn’t regularly exercise besides “getting my steps in” at work, but is thinking about joining a gym near her house
+	•	Has health insurance through her work
+	•	Reports no major financial issues, although does not have a lot of savings
+	•	Hobbies include knitting and is a member of a book club 
+	•	Religion: Considers herself spiritual, identifies as Catholic, goes to Church on major holidays 
+ 
+Family history 
+Mother is 54 years old has NAFLD and Diabetes 
+Father living, is 56, has no known health problems but “doesn’t go to the doctor” 
+Brother 29 is obese but otherwise healthy 
+One child, Antonio, 3, healthy 
+ 
+Activity 3: Refining your Differential Diagnosis and Obtaining a Physical Exam
+ 
+In your small groups take 15 minutes to research and discuss:  
+ 
+Given the history, are there any items on your differential diagnosis that you would like to add? Subtract? 
+ 
+Which parts of the physical examination would you like to perform to rule in or rule out the diagnoses on your list? Organize the examination you’d like to perform from head to toe 
+ 
+For faculty debrief:  
+ 
+Even though she traveled, the lack of diarrhea or severe myalgias / joint pains make tropical endemic diseases less likely. She could still have malaria (though it is actually relatively uncommon in the Dominican Republic) or an endemic virus (Dengue, Chikungunya) but as a teaching point, it’s more likely a single unifying diagnosis than multiple diagnoses at once, and those diseases wouldn’t commonly cause her abdominal pain or urinary symptoms. People get sick for a lot of reasons. She was probably sexually active on her tropical vacation, increasing her UTI risk. 
+ 
+Organ systems organization for ID: 
+ 
+Neuro: Encephalitis is unlikely given the normal mentation, and meningitis would likely be a more severe presentation and wouldn’t explain other GU/GI symptoms. This can be a “can’t miss” diagnosis in a less defined case, but there’s minimal concern for it in this history. 
+ 
+Pulm: URI (upper respiratory tract infection), respiratory tract infection - unlikely, except for the fever part, no dyspnea or cough  
+ 
+GI: Gastrointestinal infection (viral, bacterial, parasitic) is possible given the travel, but she has limited symptoms besides the abdominal pain, fever is less common with contained GI infections, and again, it wouldn’t cause the dysuria. Given the location of her pain, it is still worth ruling out Liver / Gallbladder pathology though. 
+ 
+GU: UTI (urinary tract infection) / pyelonephritis seems the most likely diagnosis from the history (flank/abd pain/dysuria). Also should rule out STD’s – would be an atypical presentation but she’s sexually active and the dysuria could be from that and PID would be a can’t miss diagnosis (though unlikely in this case and beyond what the students have learned so far) 
+ 
+Psych: She does not seem to have any behavioral risk factors (other than travel) for infection such as multiple sexual partners or IV drug use.  
+ 
+Bacteremia / Sepsis due to ___ cause: We’ll get a better sense of this in the vitals and and labs section, but it’s on the differential and is a can’t miss diagnosis. Students have not learned about this yet, so this could be a good place to introduce its severity / fatality, ways you can get it, and basic definition of concept. (e.g. different sources that can ultimately lead to bloodstream infections) 
+ 
+Potentially heritable and non-infectious disorders: Seems less likely (systemic lupus erythematosus, vasculitis, malignancy) given lack of family history and acuity.   No obvious medications that cause fever, especially as she has not started anything new recently.  
+ 
+Obtain the physical examination from your Clinician Educator.  
+ 
+Physical exam 
+ 
+Vital Signs 
+T: 102.5 F 
+BP: 99/57 mmHg 
+HR: 110 BPM 
+RR: 18 
+SpO2: 99% on Room air 
+BMI:  31kg/m2 
+ 
+General: Fatigued appearing but in no acute distress 
+HEENT: No scleral icterus, no oral lesions, EOMI, PERRL 
+Neck: no thyromegaly or lymphadenopathy, able to touch chin to chest without pain  
+Heart: RRR, S1S2 No M/R/G 
+Lungs: clear to auscultation bilaterally, normal effort and air movement.  
+Abdomen: Soft, mild tenderness diffusely but worse in RLQ, non-distended, normal bowel sounds 
+GU: tenderness to palpation of right flank, pelvic exam deferred 
+Extremities: No edema, grossly full range of motion 
+Neuro: Cranial nerves II-XII intact, 5/5 strength in b/l upper and lower extremities 
+Skin: scaly, erythematous rash located on upper chest without secondary excoriations 
+ 
+Clinician educators: Can show this picture of the rash if students ask.   
+  
+
+Activity 4: Prioritizing your Differential Diagnosis and Ordering Diagnostic Tests 
+ 
+In your small groups take 15 minutes to research and discuss: 
+ 
+Given the physical examination, are there any items on your differential diagnosis that you would like to add? Subtract?  What are the most likely diagnoses that are causing Ms. Esposito’s fever?  What are the “must not miss” diagnoses? 
+ 
+The most specific part of the physical exam is the right flank tenderness, pointing towards pyelonephritis. The rash is not meant to be a red herring, just showing that even though a single diagnosis is the most likely explanation for acute symptoms, obviously people can have chronic problems. 
+ 
+She has had an ectopic pregnancy in the past, and a ruptured ectopic with subsequent infection/abscess could explain her symptoms. We would not be able to rule it out with the exam alone.  
+ 
+PID, the remaining “can’t miss” diagnosis cannot be excluded by the exam alone (especially this one since no manual exam was done), but is less likely based on what we already know about the case and by the fact that we have a better fitting diagnosis with UTI/Pyelo. 
+ 
+ 
+Based on your differential diagnosis, what diagnostic tests would you like to order?  
+
+Please look at your Intro to Lab Testing Guide (Prac General Resources) for ideas!  If you propose getting imaging, think about the pros/cons/differences in the information you obtain between XR, CT, MRI, and Ultrasound.  If you propose any procedures, think about risks/benefits/costs. 
+ 
+Answer:  Depends on what students propose
+ 
+
+Justification for ordering each of your tests: Clinician educators, please feel free to expand on what you would have tested in this situation and why, there are no wrong answers. 
+ 
+CBC:  When in the ER with a fever, it’s common to obtain a CBC but specific to this case we want to obtain a WBC count to assess for severity of potential infection or inflammation.   Take homes of common misconceptions include: a normal WBC does not RULE OUT infection.  An elevated WBC does not rule in infection, either.  Looking at the differential (neutrophils vs lymphocytes) can help you lean towards bacterial vs viral illness).
+ 
+BMP + LFTs = CMP: Most adult patients also get the BMP portion of this – electrolytes, glucose and Cr, which are all important and can commonly be deranged, but most specific to this patient is the BUN and Creatinine to see if her kidney function has been affected. And the CMP adds on AST/ALT/Albumin/Alk Phos/Bilirubin which can all help determine liver status and also adds calcium. Checking the LFT’s helps assure no liver/gallbladder pathology .  Take home of common misconceptions include: LFTs do not actually assess liver “function” (platelets/coags/albumin reflect liver synthetic function more), but rather give a sense of any hepatocellular damage or biliary blockage. 
+ 
+Urine Cx and Urinalysis: The UA can help us rule in/out our number 1 diagnosis of UTI/Pyelo, and the severity of the presentation warrants that we do our best to find a specific organism rather than just empiric treatment from UA results alone.  Take home/common misconception: UA does not assess renal function the way that BUN/Creatinine do, although  if there is proteinuria, it could suggest defects in renal function. 
+ GC/Chlamydia: She has a history of STDs.  This might be lower on your list of tests you might order, but something to consider even in patients who believe they are in monogamous relationships.  
+
+Example SDL Clinical Question: When checking for GC/Chlamydia in a female, is an endocervical swab necessary or urinary specimen sufficient? 
+
+Current USPSTF guidelines recommend using NAAT (nucleic acid amplification testing) testing. In a 2021 JAMA USPSTF recommendation statement,  they reported “Nucleic acid amplification tests (NAATs) for Chlamydia trachomatis and Neisseria gonorrhoeae infections are usually used for screening because their sensitivity and specificity are high for detecting these infections.17 The US Food and Drug Administration approves NAATs for use on urogenital and extragenital sites, including urine, endocervical, vaginal, male urethral, rectal, and pharyngeal specimens.17,18 Urine testing with NAATs is at least as sensitive as testing with endocervical specimens, clinician- or self-collected vaginal specimens, or urethral specimens in clinical settings. The same specimen can be used to test for chlamydia and gonorrhea.19 “ https://jamanetwork.com/journals/jama/fullarticle/2784136.  
+
+On the other hand, on UptoDate for Chlamydia testing in women with genitourinary infection, they note that “first-catch urine specimen is also acceptable in females but might detect up to 10% fewer infections with compared with vaginal and endocervical swab samples” so it’s possible that urinary NAATs may not be the best at ruling out chlamydia. 
+
+This question came up because Dr. Glick noted that she does vaginal/endocervical swabs in the clinic, but Dr. Tsai tests urine in the hospital… some of which has to do with ease/accessibility in different clinical environments. 
+
+ 
+Rapid Covid/Respiratory Pathogen Panel: Common infection that could present in this way, although not highest on the differential 
+ 
+Blood cultures: bacteremia is a DO NOT MISS condition.  The results can take several days and you will need to empirically treat the patient in advance of the results.  SDL questions could include things like:  What empiric antibiotics might you start and why?  Covering what bacteria? 
+ 
+CT A/P: you could consider a less expensive and less radiating test, especially in a young adult, (e.g. the Renal or RUQ ultrasound) but given the severity of presentation, and ability to rule out multiple organ systems in this still undifferentiated patient, CT was a reasonable choice. And in practical terms, CT’s are efficient tests for a variety of reasons and thus, often utilized in the ER.  SDL questions could include: Would you use contrast or no contrast?  IV or Oral?  Pros/cons/contraindications? 
+ 
+Other Considerations: 
+Manual pelvic exam: There may be value in this test, but it’s currently lower on the differential, so it may not meet your testing threshold.  Because urine GC/chlamydia is a less invasive screening test, and the UA and CT pointed to alternate diagnoses, this exam was not done. In 2018, the ACOG discontinued recommending manual exams as part of annual screening exams (in normal, low risk, asymptomatic women).  This situation is different in that she is symptomatic and if there were details in the history that made this diagnosis more likely, then it would be reasonable to perform.   
+ https://pubmed.ncbi.nlm.nih.gov/30247363/ 
+ 
+ESR and/or CRP: Inflammatory marker. Non-specific. Would likely be elevated and tell you something is wrong but we already know something is wrong from the history – would not change management much.  
+ 
+Lactic Acid: did not include in the above, but can be helpful if you think someone is in septic shock or declining.  Can help prognosticate and/or assess if patient is improving or not. 
+ 
+Other tests may be suggested, if so, please ask for justification.  
+ 
+ 
+
+ Activity 5: Debrief Test Results and Final Diagnosis 
+ 
+
+Clinician Educators:  Reveal test results below based on what students have ordered.  If time is short, you can just go through this quickly as the main point of the session is the history taking and clinical reasoning.  
+
+Test Results 
+ 
+ 
+  
+ 
+
+‘
+
+
+
+
+
+
+
+ 
+GC/Chlamydia NAAT Urine: negative 
+Covid and respiratory pathogen panel: negative 
+Blood cultures: 2 out of 2 positive for E coli 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ This image is primarily for the students to see abdomino-pelvic anatomy via CT. The pathologic finding – hypodensity in right kidney w/ fat stranding (discussed below) – is only faintly discernible here.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Arrow pointing to wedge shaped hypodensity consistent with pyelonephritis. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+EXAM: 
+CT ABDOMEN PELVIS WITHOUT IV CONTRAST 
+ 
+IMPRESSION: 
+	•	At the right renal midpole is a wedge-shaped, hypodensity with associated fat stranding. No hydronephrosis. Consistent with pyelonephritis in the appropriate clinical context. 
+	•	Liver, gallbladder, spleen, adrenal glands, left kidney and pancreas all have a normal appearance. Appendix is surgically absent. Bowel is unremarkable. No free fluid or free gas. Prominent para- aortic lymph nodes. Lung bases are clear. No suspicious bone lesions. 
+ 
+Final Diagnosis: 31 yo F with a history of PCOS who presented with abdominal pain, dysuria, and fever found to have a UTI and pyelonephritis with concern for sepsis due to bacteremia from pyelonephritis.  
+ 
+Pyelonephritis is clinically defined as UTI symptoms with fever and flank or CVA tenderness, the criteria for which she meets. Her low blood pressure and high white blood cell count on arrival are concerning for sepsis. 
+ 
+Treatment / Follow Up: 
+She was bolused 2 liters of normal saline and was started on IV piperacillin-tazobactam (Zosyn) and admitted for further management. 
+	•	Her BP normalized after 2 liters in the ER and a third on the floor 
+	•	Her piperacillin-tazobactam was de-escalated to ceftriaxone the day after admission, after determining anaerobic and pseudomonas coverage was not necessary 
+	•	She defervesced ~18 hours after starting antibiotics, and her subsequent WBC downtrended to normal 
+	•	She was de-escalated further to PO cefdinir after her urine culture susceptibilities returned (below) for a total 7d treatment course 
+	•	~18 hours after they were drawn, ½ bottles from her BCx resulted positive for E. Coli, ultimately with the same susceptibility profile as below. 
+ 
+Debrief:  Through your history taking, you should have been able to get to the right ballpark to determine what kinds of tests you might want to perform and ultimately lead you to the correct diagnosis, although as noted in the beginning, the purpose of this activity is the process and not so much the “answer/diagnosis.”  That said, congrats if you did get to the correct diagnosis! 
+ 
+Other Pearls: 
+ 
+E. Coli E. is the most common bacteria causing acute pyelonephritis due to its unique ability to adhere to and colonize the urinary tract and kidneys. E.coli has adhesive molecules called P-fimbriae which interact with receptors on the surface of uroepithelial cells.1 
+ 
+Treatment can be done outpatient in young, healthy individuals who can tolerate oral medications. This patient was hospitalized for the severity of her presentation and concern for sepsis. Empiric antibiotic choice for uncomplicated pyelonephritis is the same as for UTI’s – most antibiotics with reasonable gram negative coverage and safe side effect profiles are reasonable first choices. For patient hospitalized with pyelonephritis, ceftriaxone (CTX) is typically first line for its broad coverage including gram negative. This patient got piperacillin-tazobactam because of concern for sepsis in the setting of initially not having ruled out anaerobic/GI source of infection. 1 
+ 
+THERE IS OFTEN CONFUSION AMONG STUDENTS OF THE DEFINITION OF SEPSIS:
+
+The definition of sepsis ebbs and flows to be more or less restrictive – a wider definition to catch it early, and narrower to avoid overdiagnosis. 
+An original definition of sepsis includes Greater than or equal to two systemic inflammatory response syndrome criteria  (T>38 or <36, HR >90, RR >20, WBC >12)  >=2 SIRS + source of infection. [ Severe sepsis = sepsis + systolic BP<90mmHg. Septic Shock = severe sepsis despite adequate fluid resuscitation ] 2 
+ 
+In 2016, a new definition was created and per The Sepsis-3 article summary in JAMA: “Sepsis should be defined as life-threatening organ dysfunction caused by a dysregulated host response to infection. For clinical operationalization, organ dysfunction can be represented by an increase in the Sequential [Sepsis-related] Organ Failure Assessment (SOFA) score of 2 points or more, which is associated with an in-hospital mortality greater than 10%. Septic shock should be defined as a subset of sepsis in which particularly profound circulatory, cellular, and metabolic abnormalities are associated with a greater risk of mortality than with sepsis alone. Patients with septic shock can be clinically identified by a vasopressor requirement to maintain a mean arterial pressure of 65 mm Hg or greater and serum lactate level greater than 2 mmol/L (>18 mg/dL) in the absence of hypovolemia. This combination is associated with hospital mortality rates greater than 40%. In out-of-hospital, emergency department, or general hospital ward settings, adult patients with suspected infection can be rapidly identified as being more likely to have poor outcomes typical of sepsis if they have at least 2 of the following clinical criteria that together constitute a new bedside clinical score termed quickSOFA (qSOFA): respiratory rate of 22/min or greater, altered mentation, or systolic blood pressure of 100 mm Hg or less.”  
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4968574/ 
+ 
+Historically it is taught to bolus 30ml/kg of crystalloid fluid, but in practical terms, you bolus until blood pressure stabilizes and stop/weigh risk benefits/start pressors if there are signs of volume overload 
+ 
+	•	https://www.ncbi.nlm.nih.gov/books/NBK519537/ 
+	•	https://pubmed.ncbi.nlm.nih.gov/26903335/ 
+ 
+ 
+
+Activity 6: Completing and Submitting your Self-Directed Learning Form 
+
+Students: Please take time to complete and upload your Self Directed Learning form in Entrada within 3 business days. 
+
+Late entries will receive a score of 0%, so set a reminder to ensure you submit on time and double check that your submission has gone through before checking this task off your To Do list. 
+
+CEs: Please grade these within 7 days of submission. 
+  
+
+Take Home Points 
+ 
+	•	It is important to have the differential diagnosis in mind when you take the patient’s history. This will efficiently lead you to the correct diagnosis. 
+	•	Differential diagnoses can be organized by organ system, anatomy, and physiology.  As you grow as a clinician, you will find your own way to do this most effectively, but you should always be thinking, to some degree, about most likely, least likely and must not miss diagnoses. 
+	•	Always start the history by asking patients open-ended questions. Open-ended questions allow patients to give their story and feel heard. Then ask clarifying questions (OPQRST questions are often helpful when patients haven’t provided this information upfront), as well as questions related to your differential diagnosis. 
+	•	When taking an HPI, remember to ask about associated symptoms, pertinent positives and negatives (as guided by your differential diagnosis), the patient’s perspective and the impact of the illness on the patient. 
+	•	Physical examination findings can help your narrow and refine your differential diagnoses 
+	•	Be mindful about ordering tests. Try to order only those tests that will help you rule in or rule out the diagnoses on your differential diagnosis. Focus on tests that are high yield and that help you rule out diagnoses that you must not miss. 
+	•	Self-directed learning is the process by which doctors decide what they need and want to know, create their own learning goals, identify and select the resources and strategies they’ll use to learn, and evaluate the impact and effectiveness of their learning.  
+	•	Self-directed learning is a crucial skill for physicians that you’ll practice nearly every day in medical school and throughout your entire career. 
+ 
+
+
+After the Classroom Session 
+  
+Please ensure you submit your Self Directed Learning forms on Entrada within 3 business days. Your clinician educators will read and provide feedback on your self-directed learning forms within about a week after your submission deadline.  
+ 
+Faculty: Within one week after the Clinical Reasoning Rounds/Self-Directed Learning session, please grade your students’ self-directed learning forms in Entrada. To access the forms, in Entrada click on My Profile, then Grading Tasks, then type the course number in the search bar. Click on Assessment of Self-Directed Learning and you’ll see the list of students assigned to you. For each student, click Grade, then read the student’s responses and select yes or no for each question. Any time you select “no,” provide a brief (i.e., 1-3 sentences) suggestion for improvement. 
+ 
+Please see the examples below: 
+ 
+ 
+Thoughts
+(Student’s Response)
+Faculty Feedback
+What do you want or need  to learn about so that you are better prepared to understand the patient’s symptom(s), physical examination, differential diagnosis or management plan, so that you can care for the patient more effectively?
+I’m a huge fainter – I even fainted at my sister’s wedding, but I really don’t know anything at all about fainting from a medical perspective, so I’d like to start by learning about that.
+Was a learning need identified?
+
+
+YES
+NO
+ 
+Suggestions for improvement:
+ 
+Which books, journal articles, online resources, people or other resources would you like to use to learn about the things you’d like to know?
+I think I’ll use UpToDate, because I’m learning that that’s a reference that clinicians commonly use.
+Were the selected resources/information sources appropriate to fill the learning need?
+
+
+YES
+NO
+ 
+Suggestions for improvement:
+ 
+Reflect on how believable (credible) these resources are. Select the resources you think are most credible, and read/watch/listen to/speak with them.
+I think UpToDate is believable, because it’s peer reviewed, current and my professors tell me that they rely on it.
+Was the assessment of the credibility of the information sources accurate?
+
+
+YES
+NO
+ 
+Suggestions for improvement:
+ 
+Briefly discuss the information you learned from each resource
+Although I was planning to read about fainting, the chapter was very long and I found myself overwhelmed by all of the other material I needed to read. So I didn’t have a chance to read all of this by the deadline.
+Was an analysis of the information obtained from each source provided?
+
+
+YES
+NO
+ 
+Suggestions for improvement: There’s so incredibly much to learn in medical school and beyond! Thanks so much for your candor about why you couldn’t complete this part of the assignment. Next time, please think about tackling even a portion of the UpToDate chapter (such as the differential diagnosis for fainting) rather than the whole chapter.
+Synthesize the information that you obtained from all of the resources you reviewed. (For example, if you wanted to learn about how to diagnose lung cancer and the New England Journal of Medicine recommended a chest x-ray and UpToDate recommended a CT scan, which test would you recommend for a patient with suspected lung cancer and why?)
+I learned that I won’t have enough time in medical school to read and watch everything that’s assigned to me, so I’m going to need to better prioritize how I spend my time.
+Was a synthesis of the information obtained from all of the sources provided?
+
+
+YES*
+NO
+ 
+Suggestions for improvement:
+ 
+ 
+ 
+ 
+*I give students credit for answers like this, because it synthesizes what they’ve learned from the activity, even though it doesn’t synthesize or summarize the factual information obtained across sources. In other words, please use your best judgment as you grade these forms, and feel free to reach out to me if you have any questions at all.
+ 
+ 
+Thoughts
+(Student’s Response)
+Faculty Feedback
+What do you want or need  to learn about so that you are better prepared to understand the patient’s symptom(s), physical examination, differential diagnosis or management plan, so that you can care for the patient more effectively?
+I’d like to learn about military sexual trauma among women veterans.
+Was a learning need identified?
+
+
+YES
+NO
+ 
+Suggestions for improvement:
+ 
+Which books, journal articles, online resources, people or other resources would you like to use to learn about the things you’d like to know?
+Department of Defense website, Department of Veterans Affairs website and RAINN (Rape, Abuse & Incest National Network) website
+Were the selected resources/information sources appropriate to fill the learning need?
+
+
+YES
+NO
+ 
+Suggestions for improvement:
+ 
+Reflect on how believable (credible) these resources are. Select the resources you think are most credible, and read/watch/listen to them.
+I started with the RAINN website because that site provided information that I was able to understand more easily.
+Was the assessment of the credibility of the information sources accurate?
+
+
+YES
+NO
+ 
+Suggestions for improvement: Next time, please discuss the credibility (i.e., believability/trustworthiness) of the resource(s) you use to answer your question(s). For example, how credible is the RAINN website? What are the strengths and limitations of this website as a source of medical information? Is it more or less credible than the Department of Veterans Affairs website? Why?
+ 
+Briefly discuss the information you learned from each resource
+I learned the definition of military sexual trauma, PTSD as a consequence of military sexual trauma and resources for women who have experienced military sexual trauma
+Was an analysis of the information obtained from each source provided?
+
+
+YES
+NO
+ 
+ 
+ 
+ 
+Synthesize the information that you obtained from all of the resources you reviewed. (For example, if you wanted to learn about how to diagnose lung cancer and the New England Journal of Medicine recommended a chest x-ray and UpToDate recommended a CT scan, which test would you recommend for a patient with suspected lung cancer and why?)
+Because of the number of women in the military and the prevalence of military sexual trauma, I think it’s important to ask all women if they’ve served in the military and if they have, to screen them for military sexual trauma.
+Was a synthesis of the information obtained from all of the sources provided?
+
+
+YES
+NO
+ 
+Suggestions for improvement:
+ 
+ 
+ 
+ 
+ 
+The Educator Resource Folder in Entrada contains the foundational  information about self-directed learning and a resource guide for students.  This should be used for every SDL. 
+
