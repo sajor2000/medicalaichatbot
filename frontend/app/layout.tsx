@@ -30,7 +30,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               try {
-                const theme = localStorage.getItem('ai-med-theme') || 'system';
+                const theme = localStorage.getItem('ai-med-theme') || 'dark';
                 const root = document.documentElement;
 
                 if (theme === 'system') {
@@ -47,7 +47,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider defaultTheme="system" storageKey="ai-med-theme">
+        <ThemeProvider defaultTheme="dark" storageKey="ai-med-theme">
           {children}
         </ThemeProvider>
       </body>
