@@ -147,6 +147,129 @@ export default function InterviewSummaryPage() {
           </Card>
         </div>
 
+        {/* Why You Got This Score - Personalized Explanation */}
+        <Card className="p-6 mb-8 bg-purple-50 dark:bg-purple-900/30 border-purple-200 dark:border-purple-800">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">💡 Why You Got This Score</h2>
+
+          {/* Completeness Explanation */}
+          <div className="mb-6">
+            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">
+              Completeness: {grading.completeness}/5
+            </h3>
+            <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
+              You elicited <strong>{grading.elicitedCount} of {grading.totalFacts} facts ({Math.round((grading.elicitedCount / grading.totalFacts) * 100)}%)</strong>.
+              {' '}
+              {(() => {
+                const percent = (grading.elicitedCount / grading.totalFacts) * 100;
+                if (percent >= 90) return 'This falls in the 90%+ range (Excellent - 5/5). Outstanding completeness!';
+                if (percent >= 75) return 'This falls in the 75-89% range (Very Good - 4/5). You gathered most key information.';
+                if (percent >= 60) return 'This falls in the 60-74% range (Good - 3/5). Solid foundation with room to improve.';
+                if (percent >= 40) return 'This falls in the 40-59% range (Needs Improvement - 2/5). Focus on systematic history-taking.';
+                return 'This falls below 40% (Poor - 1/5). Review OPQRST framework for comprehensive histories.';
+              })()}
+            </p>
+
+            {/* Progress Bar */}
+            <div className="relative w-full h-8 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+              <div
+                className="absolute h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all"
+                style={{ width: `${Math.min((grading.elicitedCount / grading.totalFacts) * 100, 100)}%` }}
+              />
+              <div className="absolute inset-0 flex items-center justify-center text-xs font-bold text-gray-900 dark:text-gray-100">
+                {grading.elicitedCount}/{grading.totalFacts} facts ({Math.round((grading.elicitedCount / grading.totalFacts) * 100)}%)
+              </div>
+              {/* Threshold markers */}
+              <div className="absolute top-0 left-[40%] w-px h-full bg-gray-400 dark:bg-gray-500" title="40% threshold" />
+              <div className="absolute top-0 left-[60%] w-px h-full bg-gray-400 dark:bg-gray-500" title="60% threshold" />
+              <div className="absolute top-0 left-[75%] w-px h-full bg-gray-400 dark:bg-gray-500" title="75% threshold" />
+              <div className="absolute top-0 left-[90%] w-px h-full bg-gray-400 dark:bg-gray-500" title="90% threshold" />
+            </div>
+
+            {(() => {
+              const percent = (grading.elicitedCount / grading.totalFacts) * 100;
+              if (percent >= 75 && percent < 90) {
+                const needed = Math.ceil(grading.totalFacts * 0.9) - grading.elicitedCount;
+                return (
+                  <p className="text-xs text-gray-600 dark:text-gray-400 mt-2 italic">
+                    💪 Just {needed} more {needed === 1 ? 'fact' : 'facts'} would have earned you 5/5!
+                  </p>
+                );
+              }
+              if (percent >= 60 && percent < 75) {
+                const needed = Math.ceil(grading.totalFacts * 0.75) - grading.elicitedCount;
+                return (
+                  <p className="text-xs text-gray-600 dark:text-gray-400 mt-2 italic">
+                    💪 Just {needed} more {needed === 1 ? 'fact' : 'facts'} would have earned you 4/5!
+                  </p>
+                );
+              }
+              return null;
+            })()}
+          </div>
+
+          {/* Empathy Explanation */}
+          <div>
+            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">
+              Empathy: {grading.empathy}/5
+            </h3>
+            <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
+              You asked <strong>{grading.openEndedQuestions} open-ended questions out of {grading.openEndedQuestions + grading.closedQuestions} total ({grading.openEndedQuestions + grading.closedQuestions > 0 ? Math.round((grading.openEndedQuestions / (grading.openEndedQuestions + grading.closedQuestions)) * 100) : 0}%)</strong>.
+              {' '}
+              {(() => {
+                const total = grading.openEndedQuestions + grading.closedQuestions;
+                const ratio = total > 0 ? grading.openEndedQuestions / total : 0;
+                if (ratio >= 0.4) return 'This falls in the 40%+ range (Excellent - 5/5). Excellent rapport-building!';
+                if (ratio >= 0.3) return 'This falls in the 30-39% range (Very Good - 4/5). Strong empathy skills.';
+                if (ratio >= 0.2) return 'This falls in the 20-29% range (Good - 3/5). Good balance with room to improve.';
+                if (ratio >= 0.1) return 'This falls in the 10-19% range (Needs Improvement - 2/5). Try more open-ended questions.';
+                return 'This falls below 10% (Poor - 1/5). Focus on patient-centered open-ended questions.';
+              })()}
+            </p>
+
+            {/* Progress Bar */}
+            <div className="relative w-full h-8 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+              <div
+                className="absolute h-full bg-gradient-to-r from-green-500 to-blue-500 transition-all"
+                style={{
+                  width: `${grading.openEndedQuestions + grading.closedQuestions > 0
+                    ? Math.min((grading.openEndedQuestions / (grading.openEndedQuestions + grading.closedQuestions)) * 100, 100)
+                    : 0}%`
+                }}
+              />
+              <div className="absolute inset-0 flex items-center justify-center text-xs font-bold text-gray-900 dark:text-gray-100">
+                {grading.openEndedQuestions}/{grading.openEndedQuestions + grading.closedQuestions} open-ended ({grading.openEndedQuestions + grading.closedQuestions > 0 ? Math.round((grading.openEndedQuestions / (grading.openEndedQuestions + grading.closedQuestions)) * 100) : 0}%)
+              </div>
+              {/* Threshold markers */}
+              <div className="absolute top-0 left-[10%] w-px h-full bg-gray-400 dark:bg-gray-500" title="10% threshold" />
+              <div className="absolute top-0 left-[20%] w-px h-full bg-gray-400 dark:bg-gray-500" title="20% threshold" />
+              <div className="absolute top-0 left-[30%] w-px h-full bg-gray-400 dark:bg-gray-500" title="30% threshold" />
+              <div className="absolute top-0 left-[40%] w-px h-full bg-gray-400 dark:bg-gray-500" title="40% threshold" />
+            </div>
+
+            {(() => {
+              const total = grading.openEndedQuestions + grading.closedQuestions;
+              const ratio = total > 0 ? grading.openEndedQuestions / total : 0;
+              if (ratio >= 0.3 && ratio < 0.4) {
+                const needed = Math.ceil(total * 0.4) - grading.openEndedQuestions;
+                return (
+                  <p className="text-xs text-gray-600 dark:text-gray-400 mt-2 italic">
+                    💪 Just {needed} more open-ended {needed === 1 ? 'question' : 'questions'} would have earned you 5/5!
+                  </p>
+                );
+              }
+              if (ratio >= 0.2 && ratio < 0.3) {
+                const needed = Math.ceil(total * 0.3) - grading.openEndedQuestions;
+                return (
+                  <p className="text-xs text-gray-600 dark:text-gray-400 mt-2 italic">
+                    💪 Just {needed} more open-ended {needed === 1 ? 'question' : 'questions'} would have earned you 4/5!
+                  </p>
+                );
+              }
+              return null;
+            })()}
+          </div>
+        </Card>
+
         {/* Grading Rubric */}
         <Card className="p-6 mb-8 bg-blue-50 dark:bg-blue-900/30 border-blue-200 dark:border-blue-800">
           <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">📊 Grading Rubric</h2>
