@@ -178,59 +178,67 @@ export default function InterviewPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 px-4 py-3 sm:py-4">
-        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <div className="flex-shrink-0">
-            <h1 className="text-lg sm:text-xl font-bold text-gray-900">Ms. Esposito Interview</h1>
-            <p className="text-xs sm:text-sm text-gray-600">Session: {sessionId.slice(0, 8)}...</p>
-          </div>
-          <div className="flex flex-wrap items-center gap-2 sm:gap-4 w-full sm:w-auto">
-            {/* Grading Badges - Now shown from start */}
-            <div className="flex items-center gap-2 flex-wrap">
-              <Badge
-                variant="outline"
-                className={`gap-1 ${getBadgeColor(completeness, 5)}`}
-              >
-                <span className="text-xs">Completeness:</span>
-                <span className="font-semibold">{completeness}/5</span>
-              </Badge>
-              <Badge
-                variant="outline"
-                className={`gap-1 ${getBadgeColor(empathy, 5)}`}
-              >
-                <span className="text-xs">Empathy:</span>
-                <span className="font-semibold">{empathy}/5</span>
-              </Badge>
-              <Badge
-                variant="outline"
-                className={`gap-1 ${getBadgeColor(elicitedFactIds.length, 11)}`}
-              >
-                <span className="text-xs">Facts:</span>
-                <span className="font-semibold">{elicitedFactIds.length}/11</span>
-              </Badge>
+      <header className="bg-white border-b border-gray-200 px-4 py-3">
+        <div className="max-w-6xl mx-auto">
+          {/* Row 1: Title and Mode Switcher */}
+          <div className="flex items-center justify-between mb-2">
+            <div className="flex-shrink-0">
+              <h1 className="text-lg sm:text-xl font-bold text-gray-900">Ms. Esposito Interview</h1>
+              <p className="text-xs sm:text-sm text-gray-600">Session: {sessionId.slice(0, 8)}...</p>
             </div>
+
+            {/* MODE SWITCHER - ALWAYS VISIBLE */}
             <div className="flex items-center gap-2 bg-gray-100 rounded-lg p-1.5">
               <Button
                 variant={mode === 'text' ? 'default' : 'ghost'}
-                size="sm"
+                size="lg"
                 onClick={() => setMode('text')}
-                className="gap-1.5 min-h-[44px] px-3"
+                className="gap-2 min-h-[48px] px-4 font-semibold"
                 aria-label="Switch to text mode"
               >
-                <MessageSquare className="w-4 h-4" />
-                <span className="text-sm font-medium">Text</span>
+                <MessageSquare className="w-5 h-5" />
+                TEXT
               </Button>
               <Button
-                variant={mode === 'voice' ? 'default' : 'ghost'}
-                size="sm"
+                variant={mode === 'voice' ? 'default' : 'outline'}
+                size="lg"
                 onClick={() => setMode('voice')}
-                className="gap-1.5 min-h-[44px] px-3"
+                className={`gap-2 min-h-[48px] px-4 font-semibold transition-all ${
+                  mode === 'voice'
+                    ? 'bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white border-0'
+                    : 'hover:bg-blue-50 hover:border-blue-300'
+                }`}
                 aria-label="Switch to voice mode"
               >
-                <Mic className="w-4 h-4" />
-                <span className="text-sm font-medium">Voice</span>
+                <Mic className="w-5 h-5" />
+                🎤 VOICE
               </Button>
             </div>
+          </div>
+
+          {/* Row 2: Grading Badges */}
+          <div className="flex items-center gap-2 flex-wrap">
+            <Badge
+              variant="outline"
+              className={`gap-1 ${getBadgeColor(completeness, 5)}`}
+            >
+              <span className="text-xs">Completeness:</span>
+              <span className="font-semibold">{completeness}/5</span>
+            </Badge>
+            <Badge
+              variant="outline"
+              className={`gap-1 ${getBadgeColor(empathy, 5)}`}
+            >
+              <span className="text-xs">Empathy:</span>
+              <span className="font-semibold">{empathy}/5</span>
+            </Badge>
+            <Badge
+              variant="outline"
+              className={`gap-1 ${getBadgeColor(elicitedFactIds.length, 11)}`}
+            >
+              <span className="text-xs">Facts:</span>
+              <span className="font-semibold">{elicitedFactIds.length}/11</span>
+            </Badge>
           </div>
         </div>
       </header>
