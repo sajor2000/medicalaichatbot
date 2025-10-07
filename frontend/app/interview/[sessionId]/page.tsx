@@ -209,26 +209,26 @@ export default function InterviewPage() {
                 <span className="font-semibold">{elicitedFactIds.length}/11</span>
               </Badge>
             </div>
-            <div className="flex items-center gap-2 bg-gray-100 rounded-lg p-1">
+            <div className="flex items-center gap-2 bg-gray-100 rounded-lg p-1.5">
               <Button
                 variant={mode === 'text' ? 'default' : 'ghost'}
                 size="sm"
                 onClick={() => setMode('text')}
-                className="gap-1.5 min-h-[44px] sm:min-h-0"
+                className="gap-1.5 min-h-[44px] px-3"
                 aria-label="Switch to text mode"
               >
                 <MessageSquare className="w-4 h-4" />
-                <span className="hidden sm:inline">Text</span>
+                <span className="text-sm font-medium">Text</span>
               </Button>
               <Button
                 variant={mode === 'voice' ? 'default' : 'ghost'}
                 size="sm"
                 onClick={() => setMode('voice')}
-                className="gap-1.5 min-h-[44px] sm:min-h-0"
+                className="gap-1.5 min-h-[44px] px-3"
                 aria-label="Switch to voice mode"
               >
                 <Mic className="w-4 h-4" />
-                <span className="hidden sm:inline">Voice</span>
+                <span className="text-sm font-medium">Voice</span>
               </Button>
             </div>
           </div>
