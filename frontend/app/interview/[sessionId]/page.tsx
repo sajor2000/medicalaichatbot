@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card } from '@/components/ui/card';
 import { VoiceClient } from '@/components/VoiceClient';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 type Message = {
   role: 'system' | 'user' | 'assistant';
@@ -175,19 +176,22 @@ export default function InterviewPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 px-4 py-3">
+      <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-4 py-3">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between">
             <div className="flex-shrink-0">
-              <h1 className="text-lg sm:text-xl font-bold text-gray-900">Ms. Esposito Interview</h1>
-              <p className="text-xs sm:text-sm text-gray-600">Session: {sessionId.slice(0, 8)}...</p>
+              <h1 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100">Ms. Esposito Interview</h1>
+              <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Session: {sessionId.slice(0, 8)}...</p>
             </div>
 
             <div className="flex items-center gap-3">
+              {/* THEME TOGGLE */}
+              <ThemeToggle />
+
               {/* MODE SWITCHER */}
-              <div className="flex items-center gap-2 bg-gray-100 rounded-lg p-1.5">
+              <div className="flex items-center gap-2 bg-gray-100 dark:bg-gray-700 rounded-lg p-1.5">
                 <Button
                   variant={mode === 'text' ? 'default' : 'ghost'}
                   size="lg"
@@ -241,11 +245,11 @@ export default function InterviewPage() {
                 return (
                   <div
                     key={idx}
-                    className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-sm text-gray-700 animate-in fade-in duration-300"
+                    className="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg p-3 text-sm text-gray-700 dark:text-gray-300 animate-in fade-in duration-300"
                     role="status"
                     aria-live="polite"
                   >
-                    <strong className="text-blue-900">Narrator:</strong> {msg.content}
+                    <strong className="text-blue-900 dark:text-blue-300">Narrator:</strong> {msg.content}
                   </div>
                 );
               }
@@ -258,8 +262,8 @@ export default function InterviewPage() {
                   <div
                     className={`max-w-[85%] sm:max-w-[80%] rounded-lg p-3 shadow-sm ${
                       msg.role === 'user'
-                        ? 'bg-blue-600 text-white'
-                        : 'bg-gray-100 text-gray-900'
+                        ? 'bg-blue-600 dark:bg-blue-500 text-white'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100'
                     }`}
                   >
                     <div className="text-xs font-semibold mb-1 opacity-90">
@@ -293,20 +297,20 @@ export default function InterviewPage() {
 
           {/* Error Display */}
           {error && (
-            <div className="border-t border-red-200 bg-red-50 p-3 animate-in fade-in slide-in-from-bottom-2 duration-300">
+            <div className="border-t border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-900/30 p-3 animate-in fade-in slide-in-from-bottom-2 duration-300">
               <div className="flex items-start gap-2 text-sm">
-                <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                <AlertCircle className="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
                 <div className="flex-1">
-                  <p className="font-semibold text-red-900">Failed to send message</p>
-                  <p className="text-red-700 mt-1">{error.message}</p>
+                  <p className="font-semibold text-red-900 dark:text-red-200">Failed to send message</p>
+                  <p className="text-red-700 dark:text-red-300 mt-1">{error.message}</p>
                   {error.userMessage && (
-                    <p className="text-red-600 mt-2 italic">Your message: &ldquo;{error.userMessage}&rdquo;</p>
+                    <p className="text-red-600 dark:text-red-400 mt-2 italic">Your message: &ldquo;{error.userMessage}&rdquo;</p>
                   )}
                   <Button
                     onClick={retryLastMessage}
                     variant="outline"
                     size="sm"
-                    className="mt-2 border-red-300 text-red-700 hover:bg-red-100"
+                    className="mt-2 border-red-300 dark:border-red-700 text-red-700 dark:text-red-300 hover:bg-red-100 dark:hover:bg-red-900/50"
                   >
                     Retry Message
                   </Button>
@@ -317,7 +321,7 @@ export default function InterviewPage() {
 
           {/* Input Area */}
           {mode === 'text' ? (
-            <div className="border-t border-gray-200 p-3 sm:p-4 bg-white">
+            <div className="border-t border-gray-200 dark:border-gray-700 p-3 sm:p-4 bg-white dark:bg-gray-800">
               <div className="flex gap-2">
                 <Input
                   ref={inputRef}
@@ -352,13 +356,13 @@ export default function InterviewPage() {
                   )}
                 </Button>
               </div>
-              <div className="mt-2 flex items-center justify-between text-xs text-gray-500">
+              <div className="mt-2 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
                 <span>Press Enter to send</span>
                 <span>{input.length}/500</span>
               </div>
             </div>
           ) : (
-            <div className="border-t border-gray-200 p-4 bg-white">
+            <div className="border-t border-gray-200 dark:border-gray-700 p-4 bg-white dark:bg-gray-800">
               <VoiceClient
                 sessionId={sessionId}
                 onTranscript={(text, role) => {
@@ -372,10 +376,10 @@ export default function InterviewPage() {
 
       {/* End Interview Confirmation Dialog */}
       {showEndDialog && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <Card className="max-w-md w-full p-6">
-            <h2 className="text-xl font-bold text-gray-900 mb-3">End Interview?</h2>
-            <p className="text-gray-600 mb-6">
+        <div className="fixed inset-0 bg-black bg-opacity-50 dark:bg-opacity-70 flex items-center justify-center z-50 p-4">
+          <Card className="max-w-md w-full p-6 bg-white dark:bg-gray-800">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">End Interview?</h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
               Are you sure you want to end this interview? You&apos;ll be taken to a summary page to review your performance.
             </p>
             <div className="flex gap-3">
