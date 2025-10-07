@@ -270,35 +270,35 @@ export function VoiceClient({ sessionId, onTranscript }: VoiceClientProps) {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4 p-4 sm:p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg border border-gray-200 shadow-sm">
+    <div className="flex flex-col items-center gap-4 p-4 sm:p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
       {/* Status Indicator - Large and Prominent */}
       <div className="flex flex-col items-center gap-3 w-full">
         <div className="flex items-center gap-3">
           <div className={`w-4 h-4 rounded-full ${getStatusColor()} ${status !== 'disconnected' ? 'animate-pulse' : ''} shadow-lg`} />
-          <div className="text-base sm:text-lg font-semibold text-gray-900">
+          <div className="text-base sm:text-lg font-semibold text-gray-900 dark:text-gray-100">
             {statusMessage}
           </div>
           {isProcessing && status !== 'error' && (
-            <Loader2 className="w-5 h-5 text-blue-600 animate-spin" />
+            <Loader2 className="w-5 h-5 text-blue-600 dark:text-blue-400 animate-spin" />
           )}
         </div>
 
         {/* Current Transcript Display */}
         {currentTranscript && (
-          <div className="w-full bg-white rounded-lg p-3 border border-blue-200 shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-300">
-            <p className="text-sm text-gray-600 font-medium mb-1">You said:</p>
-            <p className="text-base text-gray-900 italic">&ldquo;{currentTranscript}&rdquo;</p>
+          <div className="w-full bg-white dark:bg-gray-700 rounded-lg p-3 border border-blue-200 dark:border-blue-700 shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-300">
+            <p className="text-sm text-gray-600 dark:text-gray-300 font-medium mb-1">You said:</p>
+            <p className="text-base text-gray-900 dark:text-gray-100 italic">&ldquo;{currentTranscript}&rdquo;</p>
           </div>
         )}
 
         {/* Error Message Display */}
         {errorMessage && (
-          <div className="w-full bg-red-50 rounded-lg p-3 border border-red-200 shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-300">
+          <div className="w-full bg-red-50 dark:bg-red-900/30 rounded-lg p-3 border border-red-200 dark:border-red-800 shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-300">
             <div className="flex items-start gap-2">
-              <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+              <AlertCircle className="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
               <div>
-                <p className="text-sm font-semibold text-red-900 mb-1">Error</p>
-                <p className="text-sm text-red-700">{errorMessage}</p>
+                <p className="text-sm font-semibold text-red-900 dark:text-red-300 mb-1">Error</p>
+                <p className="text-sm text-red-700 dark:text-red-200">{errorMessage}</p>
               </div>
             </div>
           </div>
@@ -356,7 +356,7 @@ export function VoiceClient({ sessionId, onTranscript }: VoiceClientProps) {
       </div>
 
       {/* Help Text */}
-      <div className="text-xs sm:text-sm text-gray-600 text-center max-w-md leading-relaxed">
+      <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 text-center max-w-md leading-relaxed">
         {isListening ? (
           <>
             <span className="font-medium">Speak naturally with Ms. Esposito.</span>

@@ -71,10 +71,10 @@ export default function InterviewSummaryPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading summary...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 dark:border-blue-400 mx-auto mb-4"></div>
+          <p className="text-gray-600 dark:text-gray-300">Loading summary...</p>
         </div>
       </div>
     );
@@ -82,10 +82,10 @@ export default function InterviewSummaryPage() {
 
   if (!grading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
         <Card className="p-8 max-w-md text-center">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">No Interview Data</h2>
-          <p className="text-gray-600 mb-6">Could not find interview data for this session.</p>
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">No Interview Data</h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-6">Could not find interview data for this session.</p>
           <Button onClick={() => router.push('/')}>
             Return Home
           </Button>
@@ -96,13 +96,13 @@ export default function InterviewSummaryPage() {
 
   const getScoreColor = (score: number, max: number) => {
     const percent = (score / max) * 100;
-    if (percent >= 80) return 'text-green-600 bg-green-50 border-green-200';
-    if (percent >= 60) return 'text-yellow-600 bg-yellow-50 border-yellow-200';
-    return 'text-red-600 bg-red-50 border-red-200';
+    if (percent >= 80) return 'text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30 border-green-200 dark:border-green-800';
+    if (percent >= 60) return 'text-yellow-600 dark:text-yellow-400 bg-yellow-50 dark:bg-yellow-900/30 border-yellow-200 dark:border-yellow-800';
+    return 'text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/30 border-red-200 dark:border-red-800';
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 px-4">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-8">
@@ -114,8 +114,8 @@ export default function InterviewSummaryPage() {
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Interview
           </Button>
-          <h1 className="text-3xl font-bold text-gray-900">Interview Summary</h1>
-          <p className="text-gray-600 mt-2">Ms. Esposito • Session: {sessionId.slice(0, 8)}...</p>
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">Interview Summary</h1>
+          <p className="text-gray-600 dark:text-gray-300 mt-2">Ms. Esposito • Session: {sessionId.slice(0, 8)}...</p>
         </div>
 
         {/* Score Cards */}
@@ -136,9 +136,9 @@ export default function InterviewSummaryPage() {
             </div>
           </Card>
 
-          <Card className="p-6 border-2 border-gray-200 bg-white">
-            <div className="text-sm font-medium text-gray-600 mb-2">Interview Stats</div>
-            <div className="text-sm text-gray-700">
+          <Card className="p-6 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+            <div className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Interview Stats</div>
+            <div className="text-sm text-gray-700 dark:text-gray-300">
               <div>Duration: {duration}</div>
               <div>Questions: {questionCount}</div>
               <div>Open: {grading.openEndedQuestions}</div>
@@ -149,7 +149,7 @@ export default function InterviewSummaryPage() {
 
         {/* Facts Elicited */}
         <Card className="p-6 mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             Facts Elicited ({grading.elicitedCount}/{grading.totalFacts})
           </h2>
           <div className="space-y-2">
@@ -157,19 +157,19 @@ export default function InterviewSummaryPage() {
               <div
                 key={fact.id}
                 className={`flex items-start gap-3 p-3 rounded-lg ${
-                  fact.matched ? 'bg-green-50' : 'bg-red-50'
+                  fact.matched ? 'bg-green-50 dark:bg-green-900/30' : 'bg-red-50 dark:bg-red-900/30'
                 }`}
               >
                 {fact.matched ? (
-                  <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
                 ) : (
-                  <XCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                  <XCircle className="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
                 )}
                 <div className="flex-1">
-                  <div className={`font-medium ${fact.matched ? 'text-green-900' : 'text-red-900'}`}>
+                  <div className={`font-medium ${fact.matched ? 'text-green-900 dark:text-gray-100' : 'text-red-900 dark:text-gray-100'}`}>
                     {fact.description}
                   </div>
-                  <div className="text-xs text-gray-600 mt-1">
+                  <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
                     <Badge variant="outline" className="text-xs">
                       {fact.category}
                     </Badge>
@@ -182,9 +182,9 @@ export default function InterviewSummaryPage() {
 
         {/* Feedback */}
         {grading.completeness >= 4 && (
-          <Card className="p-6 mb-8 bg-green-50 border-green-200">
-            <h3 className="font-bold text-green-900 mb-2">Excellent Work!</h3>
-            <p className="text-green-800">
+          <Card className="p-6 mb-8 bg-green-50 dark:bg-green-900/30 border-green-200 dark:border-green-800">
+            <h3 className="font-bold text-green-900 dark:text-green-400 mb-2">Excellent Work!</h3>
+            <p className="text-green-800 dark:text-gray-200">
               You gathered a thorough history and asked thoughtful questions. Your use of open-ended questions
               demonstrated good empathy and rapport-building.
             </p>
@@ -192,14 +192,14 @@ export default function InterviewSummaryPage() {
         )}
 
         {grading.completeness < 4 && grading.missedFacts.length > 0 && (
-          <Card className="p-6 mb-8 bg-yellow-50 border-yellow-200">
-            <h3 className="font-bold text-yellow-900 mb-2">Key Facts Missed</h3>
-            <p className="text-yellow-800 mb-3">
+          <Card className="p-6 mb-8 bg-yellow-50 dark:bg-yellow-900/30 border-yellow-200 dark:border-yellow-800">
+            <h3 className="font-bold text-yellow-900 dark:text-yellow-400 mb-2">Key Facts Missed</h3>
+            <p className="text-yellow-800 dark:text-gray-200 mb-3">
               Consider asking about these important details in future interviews:
             </p>
             <ul className="space-y-1">
               {grading.missedFacts.map((fact, idx) => (
-                <li key={idx} className="text-yellow-900 text-sm">• {fact}</li>
+                <li key={idx} className="text-yellow-900 dark:text-gray-100 text-sm">• {fact}</li>
               ))}
             </ul>
           </Card>
