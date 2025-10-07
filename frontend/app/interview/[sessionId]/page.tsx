@@ -205,7 +205,7 @@ export default function InterviewPage() {
                   className={`gap-2 min-h-[48px] px-4 font-semibold transition-all ${
                     mode === 'voice'
                       ? 'bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white border-0'
-                      : 'hover:bg-blue-50 hover:border-blue-300'
+                      : 'text-gray-700 border-gray-300 hover:bg-blue-50 hover:border-blue-300'
                   }`}
                   aria-label="Switch to voice mode"
                 >
