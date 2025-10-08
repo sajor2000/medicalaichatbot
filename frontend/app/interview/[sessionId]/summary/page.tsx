@@ -366,25 +366,33 @@ export default function InterviewSummaryPage() {
         )}
 
         {/* Actions */}
-        <div className="flex gap-4">
-          <Button
-            onClick={() => router.push('/')}
-            className="flex-1"
-            size="lg"
-          >
-            <RotateCcw className="w-4 h-4 mr-2" />
-            Start New Interview
-          </Button>
-          <Button
-            variant="outline"
-            onClick={() => router.push(`/interview/${sessionId}`)}
-            className="flex-1"
-            size="lg"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Review Conversation
-          </Button>
-        </div>
+        <Card className="p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 border-blue-200 dark:border-blue-800">
+          <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-4 text-center">
+            🎯 What Would You Like to Do Next?
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Button
+              onClick={() => router.push('/')}
+              className="py-6 text-base font-semibold"
+              size="lg"
+            >
+              <RotateCcw className="w-5 h-5 mr-2" />
+              🔄 Practice This Case Again
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => router.push(`/interview/${sessionId}`)}
+              className="py-6 text-base font-semibold"
+              size="lg"
+            >
+              <ArrowLeft className="w-5 h-5 mr-2" />
+              📝 Review Full Conversation
+            </Button>
+          </div>
+          <p className="text-sm text-center text-gray-600 dark:text-gray-400 mt-4">
+            Tip: Reviewing your conversation helps you learn from your approach and improve your clinical reasoning skills.
+          </p>
+        </Card>
       </div>
     </div>
   );

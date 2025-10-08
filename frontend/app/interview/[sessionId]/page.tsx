@@ -219,11 +219,11 @@ export default function InterviewPage() {
                 variant="destructive"
                 size="lg"
                 onClick={handleEndInterview}
-                className="gap-2 min-h-[48px]"
+                className="gap-2 min-h-[48px] px-4"
                 aria-label="End interview and see summary"
               >
                 <LogOut className="w-4 h-4" />
-                <span className="hidden sm:inline">End Interview</span>
+                <span className="font-semibold">End & Get Feedback</span>
               </Button>
             </div>
           </div>
@@ -374,24 +374,29 @@ export default function InterviewPage() {
       {showEndDialog && (
         <div className="fixed inset-0 bg-black bg-opacity-50 dark:bg-opacity-70 flex items-center justify-center z-50 p-4">
           <Card className="max-w-md w-full p-6 bg-white dark:bg-gray-800">
-            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">End Interview?</h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Are you sure you want to end this interview? You&apos;ll be taken to a summary page to review your performance.
-            </p>
-            <div className="flex gap-3">
-              <Button
-                variant="outline"
-                onClick={() => setShowEndDialog(false)}
-                className="flex-1"
-              >
-                Continue Interview
-              </Button>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">📋 Ready to End Your Interview?</h2>
+            <div className="bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 mb-6">
+              <p className="text-sm text-gray-700 dark:text-gray-300 font-medium mb-2">
+                ⚠️ Once you end, you cannot continue asking questions.
+              </p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                You will receive your performance score and detailed feedback on Completeness and Empathy.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3">
               <Button
                 variant="destructive"
                 onClick={confirmEndInterview}
-                className="flex-1"
+                className="w-full py-6 text-lg font-semibold"
               >
-                End & See Summary
+                ✓ Yes, End Interview & View My Score
+              </Button>
+              <Button
+                variant="outline"
+                onClick={() => setShowEndDialog(false)}
+                className="w-full py-6 text-lg font-semibold"
+              >
+                ← No, Continue Interview
               </Button>
             </div>
           </Card>

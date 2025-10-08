@@ -59,18 +59,28 @@ export default function HomePage() {
             </div>
           </div>
 
+          <div className="bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 rounded-lg p-4 mb-6">
+            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">📝 Before You Begin:</h3>
+            <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+              <li>✓ Find a quiet space for 10-15 minutes</li>
+              <li>✓ This is a practice session to build your skills</li>
+              <li>✓ You&apos;ll receive immediate feedback on your performance</li>
+              <li>✓ You can switch between typing and speaking anytime</li>
+            </ul>
+          </div>
+
           <div className="space-y-3">
             <Button
               onClick={startInterview}
               disabled={loading}
-              className="w-full"
+              className="w-full text-lg py-6"
               size="lg"
             >
-              {loading ? 'Starting Interview...' : 'Start Interview'}
+              {loading ? '⏳ Preparing Your Interview...' : '🎯 Begin Patient Interview'}
             </Button>
 
-            <p className="text-xs text-center text-gray-500 dark:text-gray-400">
-              You can toggle between text and voice mode during the interview
+            <p className="text-sm text-center text-gray-600 dark:text-gray-400 font-medium">
+              Estimated time: 10-15 minutes • You&apos;ll be graded on Completeness & Empathy
             </p>
           </div>
 
