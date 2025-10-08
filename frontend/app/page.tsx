@@ -34,15 +34,12 @@ export default function HomePage() {
           </div>
 
           <div className="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
-            <h2 className="font-semibold text-gray-900 dark:text-gray-200 mb-2">Case Overview</h2>
+            <h2 className="font-semibold text-gray-900 dark:text-gray-200 mb-2">Why Patient Came to Urgent Care</h2>
             <p className="text-sm text-gray-700 dark:text-gray-200">
-              <strong>Patient:</strong> Ms. Esposito, 31-year-old female
+              <strong>Ms. Esposito, 31-year-old female</strong>
             </p>
             <p className="text-sm text-gray-700 dark:text-gray-200 mt-2">
-              <strong>Triage Note:</strong> Woke at 06:00 with fever (102.5°F) and chills.
-              Fatigue × 3 days; right-sided abdominal/flank pain. Returned from
-              Dominican Republic 2 days ago. History: ruptured ectopic pregnancy 2018.
-              POC pregnancy test negative.
+              <strong>Chief Complaint:</strong> &quot;I woke up this morning with a high fever and bad pain on my right side.&quot;
             </p>
           </div>
 
