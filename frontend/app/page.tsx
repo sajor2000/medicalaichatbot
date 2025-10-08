@@ -39,7 +39,7 @@ export default function HomePage() {
               <strong>Ms. Esposito, 31-year-old female</strong>
             </p>
             <p className="text-sm text-gray-700 dark:text-gray-200 mt-2">
-              <strong>Chief Complaint:</strong> &quot;I woke up this morning with a high fever and bad pain on my right side.&quot;
+              <strong>Chief Complaint:</strong> &quot;Abdominal pain, right side.&quot;
             </p>
           </div>
 
